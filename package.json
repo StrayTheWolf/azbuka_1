@@ -1,0 +1,30 @@
+{
+  "name": "azbuka_1",
+  "version": "1.0.0",
+  "description": "azbuka_site layout",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StrayTheWolf/azbuka_1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/StrayTheWolf/azbuka_1/issues"
+  },
+  "homepage": "https://github.com/StrayTheWolf/azbuka_1#readme",
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "laravel-mix": "^6.0.11",
+    "postcss": "^8.1.14",
+    "resolve-url-loader": "^3.1.2",
+    "sass": "^1.32.7",
+    "sass-loader": "^8.0.2"
+  },
+  "keywords": []
+}
