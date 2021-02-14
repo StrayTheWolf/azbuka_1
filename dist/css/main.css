@@ -1,1 +1,51 @@
+@import url(https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap);
+.page-header {
+  background-image: url("../images/background_high.jpg");
+}
 
+.header-logo {
+  width: 150px;
+  height: auto;
+}
+
+.menu__list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.menu__link {
+  color: #fff;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-decoration: none;
+  font-size: 1.13rem;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.header-contact {
+  display: flex;
+}
+
+.contact__icon {
+  width: 25px;
+  height: 25px;
+}
+
+.contact__title {
+  color: #E71E61;
+  font-size: 12px;
+  line-height: 1.42;
+  text-transform: uppercase;
+}
+
+.container {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.page-body {
+  font-family: "oswald", "sans-serif";
+}

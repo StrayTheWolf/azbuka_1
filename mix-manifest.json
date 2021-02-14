@@ -1,5 +1,7 @@
 {
     "/dist/script-dist.js": "/dist/script-dist.js",
+    "/dist/css/main.css": "/dist/css/main.css",
     "/dist/index.html": "/dist/index.html",
-    "/dist/css/main.css": "/dist/css/main.css"
+    "/dist/images/background_high.jpg": "/dist/images/background_high.jpg",
+    "/dist/images/logo_azbuka.svg": "/dist/images/logo_azbuka.svg"
 }
