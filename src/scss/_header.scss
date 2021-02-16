@@ -36,7 +36,7 @@
 
 // Поле контактов
 .header-contact{
-
+  margin-top: 5px;
 }
 .contact__icon{
   padding-left: 20px;
@@ -78,12 +78,10 @@
   color: white;
   background-color: #FF5B4F !important;
   border-radius: 50px;
-  display: inline-block;
   text-transform: uppercase;
   box-sizing: border-box;
   text-align: center;
   height: 45px;
-  line-height: 45px;
   font-size: 1rem;
   outline: none;
 }

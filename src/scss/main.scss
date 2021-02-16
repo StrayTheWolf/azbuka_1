@@ -3,7 +3,11 @@
 @import '_header';
 @import '_body';
 @import 'features';
+@import 'gallery';
+@import 'map';
+@import 'view_register';
 
 .page-body{
   font-family: 'oswald', 'sans-serif';
+  font-size: 20px;
 }

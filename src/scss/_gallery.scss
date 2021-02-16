@@ -1,0 +1,43 @@
+.gallery-section{
+  background-color: #f8f8f8;
+  padding: 100px 0;
+}
+.gallery-text{
+  width: 1275px;
+  margin: auto;
+  text-align: left;
+}
+.gallery-content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 1400px;
+  margin: auto;
+}
+
+.content__image{
+  width: 30%;
+  margin-right: 5px;
+  @media (max-width: 1380px) {
+    width: 40%;
+  }
+}
+.gallery__file{
+  width: 100%;
+}
+
+.gallery__title{
+  font-size: 1.3rem;
+  font-weight: normal;
+  color: #ffbd34;
+  text-transform: uppercase;
+}
+.gallery__subtitle{
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin: 0.23em 0 0.5em;
+  text-transform: uppercase;
+}
+.gallery__description{
+  line-height: 1.8em;
+}
