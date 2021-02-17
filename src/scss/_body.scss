@@ -1,6 +1,5 @@
 
-
-.header-up-container{
+.header-up-container {
   padding-top: 20px;
   display: flex;
   justify-content: center;
@@ -10,13 +9,14 @@
     -ms-transform: scale(0.75); //ie11
   }
 }
-.header-down-container{
+
+.header-down-container {
   padding-top: 500px;
   padding-bottom: 400px;
   text-align: center;
 }
 
-.col-content{
+.col-content {
   position: absolute;
   display: flex;
   display: -ms-flexbox;
@@ -32,7 +32,7 @@
   }
 }
 
-.features-section{
+.features-section {
   display: flex;
   justify-content: center;
   height: 400px;

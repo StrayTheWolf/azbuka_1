@@ -1,6 +1,15 @@
 /******/ (() => { // webpackBootstrap
-/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
+
+/***/ "./src/scripts/script.js":
+/*!*******************************!*\
+  !*** ./src/scripts/script.js ***!
+  \*******************************/
+/***/ (() => {
+
+
+
+/***/ }),
 
 /***/ "./src/scss/main.scss":
 /*!****************************!*\
@@ -8,6 +17,7 @@
   \****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
 
@@ -70,10 +80,11 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// Promise = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
-/******/ 			"/dist/script-dist": 0
+/******/ 			"/dist/scripts/script-dist": 0
 /******/ 		};
 /******/ 		
 /******/ 		var deferredModules = [
+/******/ 			["./src/scripts/script.js"],
 /******/ 			["./src/scss/main.scss"]
 /******/ 		];
 /******/ 		// no chunk on demand loading

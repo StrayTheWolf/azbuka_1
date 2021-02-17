@@ -1,4 +1,4 @@
-.page-header{
+.page-header {
   background-image: url("../images/background_high.jpg");
   background-size: cover;
   position: relative;
@@ -32,18 +32,21 @@
     font-weight: 400;
   }
 }
+
 // Меню шапки
 
 // Поле контактов
-.header-contact{
+.header-contact {
   margin-top: 5px;
 }
-.contact__icon{
+
+.contact__icon {
   padding-left: 20px;
   width: 20px;
   height: 20px;
 }
-.contact__title{
+
+.contact__title {
   padding-left: 80px;
   margin: 0;
   color: #E71E61;
@@ -51,13 +54,15 @@
   line-height: 1.42;
   text-transform: uppercase;
 }
-.contact__phone{
+
+.contact__phone {
   color: white;
   margin-left: 35px;
 }
+
 // Поле контактов
 
-.header__title{
+.header__title {
   font-family: "Oswald", sans-serif;
   font-weight: 300;
   margin: 0;
@@ -66,7 +71,7 @@
   letter-spacing: 2px;
 }
 
-.header__subtitle{
+.header__subtitle {
   font-size: 3.66667rem;
   font-weight: bold;
   margin: 0.63em 0 1em;
@@ -74,7 +79,8 @@
   line-height: 1.27em;
   text-transform: uppercase;
 }
-.button{
+
+.button {
   color: white;
   background-color: #FF5B4F !important;
   border-radius: 50px;

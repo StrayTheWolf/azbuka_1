@@ -1,27 +1,44 @@
-.map-section {
+.plan-section {
   padding: 100px 0;
 }
 
-.map-text {
+.plan-text {
   width: 1275px;
   margin: auto;
   text-align: left;
 }
 
-.map__title {
+.plan__title {
   font-size: 1.3rem;
   font-weight: normal;
   color: #ffbd34;
   text-transform: uppercase;
 }
 
-.map__subtitle {
+.plan__subtitle {
   font-size: 2.8rem;
   font-weight: bold;
   margin: 0.23em 0 0.5em;
   text-transform: uppercase;
 }
 
-.map__description {
+.plan__description {
   line-height: 1.8em;
+}
+
+.change-plan {
+  display: flex;
+  justify-content: center;
+}
+
+.plan-view {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 1400px;
+  margin: auto;
+}
+
+.plan-object {
+  width: 30%;
 }
