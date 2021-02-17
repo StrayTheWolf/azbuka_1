@@ -5,7 +5,6 @@
 .how-to-buy-text {
   width: 1275px;
   margin: auto;
-  text-align: left;
 }
 
 .how-to-buy__title {
@@ -24,4 +23,36 @@
 
 .how-to-buy__description {
   line-height: 1.8em;
+}
+
+.steps{
+  display: flex;
+  width: 1200px;
+  align-items: baseline;
+}
+
+.steps__col{
+  width: 25%;
+  margin-right: 30px;
+}
+
+.steps__title{
+  font-size: 1.33333rem;
+  font-weight: 500;
+  margin: 0 0 0.8em;
+  padding: 2em 0 0;
+  text-transform: uppercase;
+}
+
+.steps__description{
+  font-size: 1rem;
+  color: #727780;
+  line-height: 1.8em;
+}
+
+.steps__background{
+  font-size: 4.8rem;
+  color: #f0f0f0;
+  position: absolute;
+  z-index: -1;
 }

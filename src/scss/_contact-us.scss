@@ -1,0 +1,50 @@
+
+.contact-us-section {
+  display: flex;
+}
+
+.contact-fields {
+  width: 50%;
+  height: 500px;
+  background-color: #f8f8f8;
+}
+
+.contact__inputs{
+  margin-top: 50px;
+  margin-left: 350px;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.contact-image{
+  width: 50%;
+  height: 500px;
+  background-image: url("../images/background_high.jpg");
+  object-fit: cover;
+}
+
+.contacts__name{
+  font-size: 16px;
+  background: transparent;
+  height: 50px;
+  padding: 0 0 8px;
+  border: 0;
+  border-bottom: 1px solid #d4d4d4;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+.contact-info{
+  display: none;
+}
