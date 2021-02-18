@@ -8,7 +8,7 @@
   text-align: left;
 }
 
-.partner__subtitle {
+.partner-header__subtitle {
   font-size: 2.8rem;
   font-weight: bold;
   margin: 0.23em 0 0.5em;
@@ -22,7 +22,7 @@
   align-items: baseline;
 }
 
-.partner__text{
+.partner-details__text{
   margin-top: 45px;
   font-size: 21px;
   font-weight: 300;
@@ -30,18 +30,22 @@
   margin-right: 10px;
 }
 
-.partner__button{
+.btn-yellow{
   color: #0a172b;
   border-radius: 50px;
   background-color: transparent;
   outline: none;
-  box-shadow: none;
   border: 2px solid #ffbd34;
   height: 47px;
   line-height: 47px;
   font-size: 16px;
   padding: 0 30px;
   text-transform: uppercase;
+}
+
+.btn-yellow:hover{
+    background-color: #ffbd34;
+    color: white;
 }
 
 

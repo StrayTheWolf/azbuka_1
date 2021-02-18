@@ -1,5 +1,26 @@
+.content {
+  position: absolute;
+  display: flex;
+  display: -ms-flexbox;
+  width: 1280px;
+  margin-top: -80px;
+  background-color: white;
+  border-top: 3px solid #ffbd34;
+  outline: 1px solid;
 
-.col-1-3 {
+  @media (max-width: 1360px) {
+    transform: scale(0.75);
+    -ms-transform: scale(0.75); //ie11
+  }
+}
+
+.features-section {
+  display: flex;
+  justify-content: center;
+  height: 400px;
+}
+
+.columns {
   position: relative;
   width: 33%;
   margin-top: 40px;
@@ -11,19 +32,19 @@
   border: 1px solid #ececec;
 }
 
-.col__icon {
+.columns__icon {
   width: 60px;
   height: 60px;
 }
 
-.col__title {
+.columns__title {
   font-size: 1.3rem;
   font-weight: 500;
   text-transform: uppercase;
 
 }
 
-.col__subtitle {
+.columns__description {
   font-family: "Rubik", sans-serif;
   line-height: 1.8em;
   color: #727780;
