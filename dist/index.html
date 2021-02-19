@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+        <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -12,6 +12,7 @@
         }
     </style>
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
 </head>
 <body class="page-body">
 <div class="header">
@@ -140,13 +141,13 @@
     </div>
     <div class="change-plan">
         <button class="btn-red button-prices">
-            Записаться
+            1-Комнатные
         </button>
         <button class="btn-red button-prices">
-            Записаться
+            2-Комнатные
         </button>
         <button class="btn-red button-prices">
-            Записаться
+            3-Комнатные
         </button>
     </div>
     <div class="plan-view">
@@ -183,7 +184,8 @@
     <div class="partner-header">
         <h2 class="partner-header__subtitle">БАНКИ ПАРТНЁРЫ</h2>
     </div>
-    <div class="slider">
+
+    <div class="slider" style="display: none">
         <div class="slider__item"><img class="slider__image" src="images/partners/1_absolut.jpg" alt=""></div>
         <div class="slider__item"><img class="slider__image" src="images/partners/2_akbars.jpg" alt=""></div>
         <div class="slider__item"><img class="slider__image" src="images/partners/3_alpha.png" alt=""></div>
@@ -214,6 +216,100 @@
         <div class="slider__item"><img class="slider__image" src="images/partners/28_vtb.jpg" alt=""></div>
         <div class="slider__item"><img class="slider__image" src="images/partners/29_zenit.png" alt=""></div>
     </div>
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img class="slider__image" src="images/partners/1_absolut.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img class="slider__image" src="images/partners/2_akbars.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img class="slider__image" src="images/partners/3_alpha.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img class="slider__image" src="images/partners/4_atb.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img class="slider__image" src="images/partners/5_bankrussia.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img class="slider__image" src="images/partners/6_centrinvest.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img class="slider__image" src="images/partners/7_domrf.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img class="slider__image" src="images/partners/8_gazprom.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img class="slider__image" src="images/partners/9_inicredit.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img class="slider__image" src="images/partners/10_kebankredit.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img class="slider__image" src="images/partners/11_msk_bank.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img class="slider__image" src="images/partners/12_otkritie.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img class="slider__image" src="images/partners/13_prom.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img class="slider__image" src="images/partners/14_raiffaizen.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img class="slider__image" src="images/partners/15_rosbank.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img class="slider__image" src="images/partners/16_rosevro.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img class="slider__image" src="images/partners/17_rosselkhoz.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img class="slider__image" src="images/partners/18_rostfinance.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img class="slider__image" src="images/partners/19_saintpetersburg.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img class="slider__image" src="images/partners/20_sber.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img class="slider__image" src="images/partners/21_severgaz.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img class="slider__image" src="images/partners/22_smp.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img class="slider__image" src="images/partners/23_sovkom.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img class="slider__image" src="images/partners/24_tkb.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img class="slider__image" src="images/partners/25_uralsib.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img class="slider__image" src="images/partners/26_vbbr.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img class="slider__image" src="images/partners/27_vosrozhdenie.jpeg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img class="slider__image" src="images/partners/28_vtb.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img class="slider__image" src="images/partners/29_zenit.png" alt="">
+            </div>
+        </div>
+
+    </div>
+
     <div class="partner-details">
         <p class="partner-details__text">Также возможна покупка в рассрочку</p>
         <button class="btn-yellow partner-button">
@@ -307,6 +403,9 @@
     </div>
 
 </div>
-<script src="dist/script-dist.js"></script>
+
+<script src="scripts/script-dist.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+
 </body>
 </html>

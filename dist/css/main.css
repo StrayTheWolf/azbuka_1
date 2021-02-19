@@ -3,6 +3,7 @@
   padding-top: 20px;
   display: flex;
   justify-content: center;
+  background-color: rgba(171, 162, 162, 0.1);
 }
 @media (max-width: 1100px) {
   .header-up-container {
@@ -204,6 +205,17 @@
 
 .gallery-text__description {
   line-height: 1.8em;
+}
+
+.button-prices {
+  margin-right: 10px;
+  background-color: white !important;
+  color: #0a172b;
+  text-align: center;
+}
+
+.button-prices:hover {
+  background-color: #FF5B4F !important;
 }
 
 .map-section {
@@ -418,6 +430,25 @@
 
 .slider__image {
   padding-right: 50px;
+}
+
+.swiper-container {
+  width: 1275px !important;
+  margin: auto;
+}
+
+.swiper-wrapper {
+  align-items: center;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .how-to-buy-section {
