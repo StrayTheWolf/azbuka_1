@@ -26,6 +26,21 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+document.getElementById('1-room').addEventListener('click', function () {
+  document.getElementById('apartment-3').style.display = 'none';
+  document.getElementById('apartment-2').style.display = 'none';
+  document.getElementById('apartment-1').style.display = 'flex';
+});
+document.getElementById('2-room').addEventListener('click', function () {
+  document.getElementById('apartment-1').style.display = 'none';
+  document.getElementById('apartment-3').style.display = 'none';
+  document.getElementById('apartment-2').style.display = 'flex';
+});
+document.getElementById('3-room').addEventListener('click', function () {
+  document.getElementById('apartment-1').style.display = 'none';
+  document.getElementById('apartment-2').style.display = 'none';
+  document.getElementById('apartment-3').style.display = 'flex';
+});
 
 /***/ }),
 

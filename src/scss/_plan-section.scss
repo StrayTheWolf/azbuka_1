@@ -1,5 +1,6 @@
 .plan-section {
   padding: 100px 0;
+  background-color: #f8f8f8;
 }
 
 .plan-text {
@@ -34,11 +35,19 @@
 .plan-view {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: left;
   width: 1400px;
   margin: auto;
 }
 
 .plan-object {
   width: 30%;
+  text-align: center;
+  margin-top: 20px;
+  background-color: white;
+}
+
+.plan-object__img{
+  width: 250px;
+  height: 250px;
 }

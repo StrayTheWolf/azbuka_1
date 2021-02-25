@@ -76,23 +76,41 @@
         </p>
     </div>
     <div class="gallery-content">
-        <div class="galley-content__image">
-            <img class="gallery__file" src="images/gallery/photo_1-min.jpg" alt="">
+        <div class="gallery-content__image">
+            <a href="images/gallery/photo_1-min.jpg">
+                <img class="gallery__file" src="images/gallery/photo_1-min.jpg" alt="">
+            </a>
+            <span class="gallery__overlay">Увеличить</span>
         </div>
-        <div class="galley-content__image">
-            <img class="gallery__file" src="images/gallery/photo_2-min.jpg" alt="">
+        <div class="gallery-content__image">
+            <a href="images/gallery/photo_2-min.jpg">
+                <img class="gallery__file" src="images/gallery/photo_2-min.jpg" alt="">
+            </a>
+            <span class="gallery__overlay">Увеличить</span>
         </div>
-        <div class="galley-content__image">
-            <img class="gallery__file" src="images/gallery/photo_3-min.jpg" alt="">
+        <div class="gallery-content__image">
+            <a href="images/gallery/photo_3-min.jpg">
+                <img class="gallery__file" src="images/gallery/photo_3-min.jpg" alt="">
+            </a>
+            <span class="gallery__overlay">Увеличить</span>
         </div>
-        <div class="galley-content__image">
-            <img class="gallery__file" src="images/gallery/photo_4-min.jpg" alt="">
+        <div class="gallery-content__image">
+            <a href="images/gallery/photo_4-min.jpg">
+                <img class="gallery__file" src="images/gallery/photo_4-min.jpg" alt="">
+            </a>
+            <span class="gallery__overlay">Увеличить</span>
         </div>
-        <div class="galley-content__image">
-            <img class="gallery__file" src="images/gallery/photo_5-min.jpg" alt="">
+        <div class="gallery-content__image">
+            <a href="images/gallery/photo_5-min.jpg">
+                <img class="gallery__file" src="images/gallery/photo_5-min.jpg" alt="">
+            </a>
+            <span class="gallery__overlay">Увеличить</span>
         </div>
-        <div class="galley-content__image">
-            <img class="gallery__file" src="images/gallery/photo_6-min.jpg" alt="">
+        <div class="gallery-content__image">
+            <a href="images/gallery/photo_6-min.jpg">
+                <img class="gallery__file" src="images/gallery/photo_6-min.jpg" alt="">
+            </a>
+            <span class="gallery__overlay">Увеличить</span>
         </div>
     </div>
 
@@ -140,34 +158,74 @@
         </p>
     </div>
     <div class="change-plan">
-        <button class="btn-red button-prices">
+        <button id="1-room" class="btn-red button-prices">
             1-Комнатные
         </button>
-        <button class="btn-red button-prices">
+        <button id="2-room" class="btn-red button-prices">
             2-Комнатные
         </button>
-        <button class="btn-red button-prices">
+        <button id="3-room" class="btn-red button-prices">
             3-Комнатные
         </button>
     </div>
-    <div class="plan-view">
+    <div id="apartment-1" class="plan-view">
         <div class="plan-object">
-            <img src="" alt="">
-            <div class="plan-img-title"></div>
-            <div class="plan-img-subtitle"></div>
-            <button class="btn-red"></button>
+            <img class="plan-object__img" src="images/apartment_plan/1_room-1.jpg" alt="">
+            <div class="plan-object__title">1-комнатная</div>
+            <div class="plan-object__subtitle">Площадь - 37.2</div>
+            <button class="btn-red">Получить цены</button>
         </div>
         <div class="plan-object">
-            <img src="" alt="">
-            <div class="plan-img-title"></div>
-            <div class="plan-img-subtitle"></div>
-            <button class="btn-red"></button>
+            <img class="plan-object__img" src="images/apartment_plan/1_room-2.jpg" alt="">
+            <div class="plan-object__title">1-комнатная</div>
+            <div class="plan-object__subtitle">Площадь - 35.18</div>
+            <button class="btn-red">Получить цены</button>
         </div>
         <div class="plan-object">
-            <img src="" alt="">
-            <div class="plan-img-title"></div>
-            <div class="plan-img-subtitle"></div>
-            <button class="btn-red"></button>
+            <img class="plan-object__img" src="images/apartment_plan/1_room-3.jpg" alt="">
+            <div class="plan-object__title">1-комнатная</div>
+            <div class="plan-object__subtitle">Площадь - 36.48</div>
+            <button class="btn-red">Получить цены</button>
+        </div>
+    </div>
+    <div id="apartment-2" class="plan-view" style="display:none" >
+        <div class="plan-object">
+            <img class="plan-object__img" src="images/apartment_plan/2_room-1.jpg" alt="">
+            <div class="plan-img-title">2-комнатная</div>
+            <div class="plan-img-subtitle">Площадь - 51.19</div>
+            <button class="btn-red">Получить цены</button>
+        </div>
+        <div class="plan-object">
+            <img class="plan-object__img" src="images/apartment_plan/2_room-2.png" alt="">
+            <div class="plan-img-title">2-комнатная</div>
+            <div class="plan-img-subtitle">Площадь - 59.1</div>
+            <button class="btn-red">Получить цены</button>
+        </div>
+    </div>
+    <div id="apartment-3" class="plan-view" style="display:none">
+        <div class="plan-object">
+            <img class="plan-object__img" src="images/apartment_plan/3_room-1.jpg" alt="">
+            <div class="plan-img-title">3-комнатная</div>
+            <div class="plan-img-subtitle">Площадь - 84.99</div>
+            <button class="btn-red">Получить цены</button>
+        </div>
+        <div class="plan-object">
+            <img class="plan-object__img" src="images/apartment_plan/3_room-2.jpg" alt="">
+            <div class="plan-img-title">3-комнатная</div>
+            <div class="plan-img-subtitle">Площадь - 79.77</div>
+            <button class="btn-red">Получить цены</button>
+        </div>
+        <div class="plan-object">
+            <img class="plan-object__img" src="images/apartment_plan/3_room-3.jpg" alt="">
+            <div class="plan-img-title">3-комнатная</div>
+            <div class="plan-img-subtitle">Площадь - 93.26</div>
+            <button class="btn-red">Получить цены</button>
+        </div>
+        <div class="plan-object">
+            <img class="plan-object__img" src="images/apartment_plan/3_room-4.jpg" alt="">
+            <div class="plan-img-title">3-комнатная</div>
+            <div class="plan-img-subtitle">Площадь - 99.82</div>
+            <button class="btn-red">Получить цены</button>
         </div>
     </div>
 </div>
@@ -179,13 +237,105 @@
             расчет ваших ипотечных платежей,<br> поможем заполнить заявку на кредит и направим её во все банки
         </p>
     </div>
+    <div class="calc">
+        <div class="credit-calc">
+            <label for="bank">Выберите банк</label>
+            <select class="calc-field" id="bank">
+                <option value="">Сбербанк</option>
+                <option value="">ДомРФ</option>
+                <option value="">ТрансКапиталБанк</option>
+                <option value="">АбсолютБанк</option>
+                <option value="">ВТБ</option>
+                <option value="">ЦентрИнвест</option>
+                <option value="">ПромсвязьБанк</option>
+                <option value="">Московский Индустриальный Банк</option>
+                <option value="">Уралсиб</option>
+                <option value="">Райффайзен Банк</option>
+                <option value="">ГазпромБанк</option>
+                <option value="">Банк "Открытие"</option>
+                <option value="">Возрождение Банк</option>
+                <option value="">Юникредит Банк</option>
+                <option value="">ТрансКапиталБанк</option>
+                <option value="">РоссельхозБанк</option>
+                <option value="">Банк Зенит</option>
+                <option value="">Росбанк</option>
+                <option value="">АЛЬФА-БАНК</option>
+                <option value="">Кубань Кредит</option>
+                <option value="">Всероссийский Банк Развития Регионов</option>
+                <option value="">РостФинанс</option>
+                <option value="">РосЕвроБанк</option>
+                <option value="">Банк Россия</option>
+                <option value="">СМП Банк</option>
+                <option value="">Азиатско-Тихоокеанский Банк</option>
+                <option value="">Банк Санкт-Петербург</option>
+            </select>
+
+            <label for="range-sum">Стоимость недвижимости</label>
+            <input class="calc-field" id="range-sum" type="text" pattern="^[0-9]+$">
+            <input type="range" min="100 000" max="30 000 000" value="0" class="credit-slider">
+
+            <label for="first-payment">Первоначальный взнос</label>
+            <input class="calc-field" id="first-payment" type="text">
+            <input type="range" min="1" max="100" value="0" class="credit-slider">
+
+            <label for="credit-age">Срок кредита</label>
+            <input class="calc-field" id="credit-age" type="text">
+            <input type="range" min="1" max="100" value="0" class="credit-slider">
+
+            <div class="calc-options">
+                <p class="calc-options__title">Семейная ипотека
+                    <img class="calc-options__info" src="images/icons/info-circle.svg" alt="" title="Государственная программа субсидирования молодых семей
+с процентной ставкой от 4,5% в зависимости от выбранного банка.">
+                    <label class="calc-options-switch">
+                        <input type="checkbox" name="toggle" class="toggle-button">
+                    </label>
+                </p>
+                <p class="calc-options__title">Ипотека с господдержкой
+                    <img class="calc-options__info" src="images/icons/info-circle.svg" alt="" title="Государственная программа льготной ипотеки,
+на приобретение квартиры в новостройке.">
+                    <label for="toggle-button" class="calc-options-switch">
+                        <input type="checkbox" name="toggle" id="toggle-button" class="toggle-button">
+                    </label>
+                </p>
+            </div>
+        </div>
+
+        <div class="credit-sum">
+            <div class="chosen-options">
+                <div class="options-1">
+                    <h1 class="options-title">Сумма кредита</h1>
+                    <h2 class="options-value">100</h2>
+                    <h1 class="options-title">Ежеемесячный платеж</h1>
+                    <h2 class="options-value">1</h2>
+                </div>
+               <div class="options-2">
+                   <h1 class="options-title">Выбранный банк</h1>
+                   <h2 class="options-value">Банк1</h2>
+                   <h1 class="options-title">Процентная ставка</h1>
+                   <h2 class="options-value"> %</h2>
+               </div>
+            </div>
+            <p class="options-offer">Получите одобрение ипотеки за 1 день</p>
+            <label for="send-credit-name">ФИО</label>
+            <input class="options-field" id="send-credit-name" type="text" placeholder="">
+            <label for="send-credit-phone">Телефон</label>
+            <input class="options-field" id="send-credit-phone" type="tel" placeholder="">
+
+            <div class="contact-fields__agreement options-agreement">Отправляя форму, вы даете согласие на
+                <a class="agreement__link" href="">обработку</a>
+                своих персональных данных
+            </div>
+            <input type="submit" class="btn-submit"></input>
+
+        </div>
+    </div>
 </div>
 <div class="partner-section">
     <div class="partner-header">
         <h2 class="partner-header__subtitle">БАНКИ ПАРТНЁРЫ</h2>
     </div>
 
-    <div class="slider" style="display: none">
+    <div class="credit-slider" style="display: none">
         <div class="slider__item"><img class="slider__image" src="images/partners/1_absolut.jpg" alt=""></div>
         <div class="slider__item"><img class="slider__image" src="images/partners/2_akbars.jpg" alt=""></div>
         <div class="slider__item"><img class="slider__image" src="images/partners/3_alpha.png" alt=""></div>
