@@ -1,6 +1,27 @@
 @import url(https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap);
+.top-btn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #ffbd34;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.top-btn:hover {
+  background-color: #FF5B4F;
+  transition: 0.5s;
+}
+
 .header-up-container {
-  padding-top: 20px;
+  padding-top: 10px;
   display: flex;
   justify-content: center;
   background-color: rgba(171, 162, 162, 0.1);
@@ -27,6 +48,11 @@
 .menu-logo {
   width: 150px;
   height: auto;
+}
+
+.menu__image {
+  width: 140px;
+  height: 70px;
 }
 
 .menu__list {
@@ -72,6 +98,7 @@
 .menu-contact__call {
   color: white;
   margin-left: 35px;
+  text-decoration: none;
 }
 
 .header__title {
@@ -178,6 +205,7 @@
 .gallery-content__image {
   width: 30%;
   margin-right: 5px;
+  position: relative;
 }
 .gallery-content__image :hover {
   opacity: 0.7;
@@ -192,7 +220,9 @@
 
 .gallery__overlay {
   position: absolute;
-  top: 180px;
+  z-index: 5;
+  left: 320px;
+  top: 200px;
 }
 
 .gallery__file {
@@ -350,6 +380,11 @@
   text-align: center;
   margin-top: 20px;
   background-color: white;
+}
+.plan-object :hover {
+  opacity: 0.7;
+  transition: 0.5s;
+  cursor: pointer;
 }
 
 .plan-object__img {
@@ -718,6 +753,10 @@
   margin: auto;
   padding-bottom: 10px;
   align-items: baseline;
+}
+.contact-overlay-element__item {
+  text-decoration: none;
+  color: #06163a;
 }
 
 .btn-submit {

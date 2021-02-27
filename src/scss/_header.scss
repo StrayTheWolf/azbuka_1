@@ -1,5 +1,5 @@
 .header-up-container {
-  padding-top: 20px;
+  padding-top: 10px;
   display: flex;
   justify-content: center;
   background-color: rgba(171, 162, 162, 0.1);
@@ -25,6 +25,10 @@
 .menu-logo {
   width: 150px;
   height: auto;
+}
+.menu__image{
+  width: 140px;
+  height: 70px;
 }
 
 // Меню шапки
@@ -77,6 +81,7 @@
 .menu-contact__call {
   color: white;
   margin-left: 35px;
+  text-decoration: none;
 }
 
 // Поле контактов

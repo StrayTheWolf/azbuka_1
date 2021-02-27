@@ -1,4 +1,6 @@
 "use strict";
+require('fslightbox');
+import {scrollFunction, topFunction} from "./topButton";
 
 document.addEventListener("DOMContentLoaded", () => {
     let swiper = new Swiper('.swiper-container', {
@@ -14,7 +16,14 @@ document.addEventListener("DOMContentLoaded", () => {
         autoplay: {
             delay: 3000,
         },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
     });
+
+    topFunction();
+    scrollFunction();
 })
 
 document.getElementById('1-room').addEventListener('click',()=>{
@@ -32,4 +41,3 @@ document.getElementById('3-room').addEventListener('click',()=>{
     document.getElementById('apartment-2').style.display = 'none';
     document.getElementById('apartment-3').style.display = 'flex';
 })
-

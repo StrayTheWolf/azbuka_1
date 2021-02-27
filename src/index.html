@@ -12,9 +12,11 @@
         }
     </style>
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/swiper/swiper-bundle.css" />
+
 </head>
 <body class="page-body">
+<button onclick="topFunction()" id="top-btn" class="top-btn" title="Go to top">Наверх</button>
 <div class="header">
     <div class="header-up-container">
         <div class="menu-logo">
@@ -22,18 +24,18 @@
         </div>
         <nav class="menu">
             <ul class="menu__list">
-                <li class="menu__item"><a href="" class="menu__link">Планировки</a></li>
-                <li class="menu__item"><a href="" class="menu__link">Расположение</a></li>
-                <li class="menu__item"><a href="" class="menu__link">Ипотека</a></li>
-                <li class="menu__item"><a href="" class="menu__link">Фотогаллерея</a></li>
+                <li class="menu__item"><a href="#plan-section" class="menu__link">Планировки</a></li>
+                <li class="menu__item"><a href="#map-section" class="menu__link">Расположение</a></li>
+                <li class="menu__item"><a href="#credit-section" class="menu__link">Ипотека</a></li>
+                <li class="menu__item"><a href="#gallery-section" class="menu__link">Фотогаллерея</a></li>
                 <li class="menu__item"><a href="" class="menu__link">Документы</a></li>
-                <li class="menu__item"><a href="" class="menu__link">Контакты</a></li>
+                <li class="menu__item"><a href="#contact-us-section" class="menu__link">Контакты</a></li>
             </ul>
         </nav>
         <div class="menu-contact">
             <h2 class="menu-contact__title">Отдел Продаж</h2>
             <img class="menu-contact__icon" src="images/icons/white-telephone.png" alt="Иконка телефонного аппарата">
-            <a class="menu-contact__call">8 (863) 204-35-17</a>
+            <a class="menu-contact__call" href="tel:+78632043517">+7 (863) 204-35-17</a>
         </div>
     </div>
     <div class="header-down-container">
@@ -66,7 +68,7 @@
         </div>
     </div>
 </div>
-<div class="gallery-section">
+<div id="gallery-section" class="gallery-section">
     <div class="gallery-text">
         <h1 class="gallery-text__title">ЖК «Главный»</h1>
         <h2 class="gallery-text__subtitle">Фотогалерея</h2>
@@ -77,37 +79,37 @@
     </div>
     <div class="gallery-content">
         <div class="gallery-content__image">
-            <a href="images/gallery/photo_1-min.jpg">
+            <a data-fslightbox="first-lightbox" href="images/gallery/photo_1-min.jpg">
                 <img class="gallery__file" src="images/gallery/photo_1-min.jpg" alt="">
             </a>
             <span class="gallery__overlay">Увеличить</span>
         </div>
         <div class="gallery-content__image">
-            <a href="images/gallery/photo_2-min.jpg">
+            <a data-fslightbox="first-lightbox" href="images/gallery/photo_2-min.jpg">
                 <img class="gallery__file" src="images/gallery/photo_2-min.jpg" alt="">
             </a>
             <span class="gallery__overlay">Увеличить</span>
         </div>
         <div class="gallery-content__image">
-            <a href="images/gallery/photo_3-min.jpg">
+            <a data-fslightbox="first-lightbox" href="images/gallery/photo_3-min.jpg">
                 <img class="gallery__file" src="images/gallery/photo_3-min.jpg" alt="">
             </a>
             <span class="gallery__overlay">Увеличить</span>
         </div>
         <div class="gallery-content__image">
-            <a href="images/gallery/photo_4-min.jpg">
+            <a data-fslightbox="first-lightbox" href="images/gallery/photo_4-min.jpg">
                 <img class="gallery__file" src="images/gallery/photo_4-min.jpg" alt="">
             </a>
             <span class="gallery__overlay">Увеличить</span>
         </div>
         <div class="gallery-content__image">
-            <a href="images/gallery/photo_5-min.jpg">
+            <a data-fslightbox="first-lightbox" href="images/gallery/photo_5-min.jpg">
                 <img class="gallery__file" src="images/gallery/photo_5-min.jpg" alt="">
             </a>
             <span class="gallery__overlay">Увеличить</span>
         </div>
         <div class="gallery-content__image">
-            <a href="images/gallery/photo_6-min.jpg">
+            <a data-fslightbox="first-lightbox" href="images/gallery/photo_6-min.jpg">
                 <img class="gallery__file" src="images/gallery/photo_6-min.jpg" alt="">
             </a>
             <span class="gallery__overlay">Увеличить</span>
@@ -115,7 +117,7 @@
     </div>
 
 </div>
-<div class="map-section">
+<div id="map-section" class="map-section">
     <div class="map-text">
         <h1 class="map-text__title">ЖК «Главный»</h1>
         <h2 class="map-text__subtitle">РАСПОЛОЖЕНИЕ</h2>
@@ -129,7 +131,7 @@
                 width="100%" height="450"></iframe>
     </div>
 </div>
-<div class="view-register-section">
+<div id="view-register-section" class="view-register-section">
     <div class="view-register-text">
         <h1 class="view-register-text__title">
             Запишитесь на просмотр квартиры
@@ -139,16 +141,14 @@
         </h2>
     </div>
     <div class="view-register-dial">
-        <a href="" class="view-register-dial__phone">
-            8 (863) 204-35-18
-        </a>
+        <a class="view-register-dial__phone" href="tel:+78632043517">+7 (863) 204-35-17</a>
         <button class="btn-red view-register-dial__button">
             Записаться
         </button>
     </div>
 
 </div>
-<div class="plan-section">
+<div id="plan-section" class="plan-section">
     <div class="plan-text">
         <h1 class="plan-text__title">ЖК «Главный»</h1>
         <h2 class="plan-text__subtitle">ПЛАНИРОВКИ</h2>
@@ -170,19 +170,28 @@
     </div>
     <div id="apartment-1" class="plan-view">
         <div class="plan-object">
-            <img class="plan-object__img" src="images/apartment_plan/1_room-1.jpg" alt="">
+            <a data-fslightbox href="images/apartment_plan/1_room-1.jpg">
+                <img class="plan-object__img" src="images/apartment_plan/1_room-1.jpg" alt="">
+            </a>
+            <span>Увеличить</span>
             <div class="plan-object__title">1-комнатная</div>
             <div class="plan-object__subtitle">Площадь - 37.2</div>
             <button class="btn-red">Получить цены</button>
         </div>
         <div class="plan-object">
-            <img class="plan-object__img" src="images/apartment_plan/1_room-2.jpg" alt="">
+            <a data-fslightbox href="images/apartment_plan/1_room-2.jpg">
+                <img class="plan-object__img" src="images/apartment_plan/1_room-2.jpg" alt="">
+            </a>
+            <span>Увеличить</span>
             <div class="plan-object__title">1-комнатная</div>
             <div class="plan-object__subtitle">Площадь - 35.18</div>
             <button class="btn-red">Получить цены</button>
         </div>
         <div class="plan-object">
-            <img class="plan-object__img" src="images/apartment_plan/1_room-3.jpg" alt="">
+            <a data-fslightbox href="images/apartment_plan/1_room-3.jpg">
+                <img class="plan-object__img" src="images/apartment_plan/1_room-3.jpg" alt="">
+            </a>
+            <span>Увеличить</span>
             <div class="plan-object__title">1-комнатная</div>
             <div class="plan-object__subtitle">Площадь - 36.48</div>
             <button class="btn-red">Получить цены</button>
@@ -190,13 +199,19 @@
     </div>
     <div id="apartment-2" class="plan-view" style="display:none" >
         <div class="plan-object">
-            <img class="plan-object__img" src="images/apartment_plan/2_room-1.jpg" alt="">
+            <a data-fslightbox href="images/apartment_plan/2_room-1.jpg">
+                <img class="plan-object__img" src="images/apartment_plan/2_room-1.jpg" alt="">
+                <span>Увеличить</span>
+            </a>
             <div class="plan-img-title">2-комнатная</div>
             <div class="plan-img-subtitle">Площадь - 51.19</div>
             <button class="btn-red">Получить цены</button>
         </div>
         <div class="plan-object">
-            <img class="plan-object__img" src="images/apartment_plan/2_room-2.png" alt="">
+            <a data-fslightbox href="images/apartment_plan/2_room-2.png">
+                <img class="plan-object__img" src="images/apartment_plan/2_room-2.png" alt="">
+                <span>Увеличить</span>
+            </a>
             <div class="plan-img-title">2-комнатная</div>
             <div class="plan-img-subtitle">Площадь - 59.1</div>
             <button class="btn-red">Получить цены</button>
@@ -204,32 +219,44 @@
     </div>
     <div id="apartment-3" class="plan-view" style="display:none">
         <div class="plan-object">
-            <img class="plan-object__img" src="images/apartment_plan/3_room-1.jpg" alt="">
+            <a data-fslightbox href="images/apartment_plan/3_room-1.jpg">
+                <img class="plan-object__img" src="images/apartment_plan/3_room-1.jpg" alt="">
+                <span>Увеличить</span>
+            </a>
             <div class="plan-img-title">3-комнатная</div>
             <div class="plan-img-subtitle">Площадь - 84.99</div>
             <button class="btn-red">Получить цены</button>
         </div>
         <div class="plan-object">
-            <img class="plan-object__img" src="images/apartment_plan/3_room-2.jpg" alt="">
+            <a data-fslightbox href="images/apartment_plan/3_room-2.jpg">
+                <img class="plan-object__img" src="images/apartment_plan/3_room-2.jpg" alt="">
+                <span>Увеличить</span>
+            </a>
             <div class="plan-img-title">3-комнатная</div>
             <div class="plan-img-subtitle">Площадь - 79.77</div>
             <button class="btn-red">Получить цены</button>
         </div>
         <div class="plan-object">
-            <img class="plan-object__img" src="images/apartment_plan/3_room-3.jpg" alt="">
+            <a data-fslightbox href="images/apartment_plan/3_room-3.jpg">
+                <img class="plan-object__img" src="images/apartment_plan/3_room-3.jpg" alt="">
+                <span>Увеличить</span>
+            </a>
             <div class="plan-img-title">3-комнатная</div>
             <div class="plan-img-subtitle">Площадь - 93.26</div>
             <button class="btn-red">Получить цены</button>
         </div>
         <div class="plan-object">
-            <img class="plan-object__img" src="images/apartment_plan/3_room-4.jpg" alt="">
+            <a data-fslightbox href="images/apartment_plan/3_room-3.jpg">
+                <img class="plan-object__img" src="images/apartment_plan/3_room-3.jpg" alt="">
+                <span>Увеличить</span>
+            </a>
             <div class="plan-img-title">3-комнатная</div>
             <div class="plan-img-subtitle">Площадь - 99.82</div>
             <button class="btn-red">Получить цены</button>
         </div>
     </div>
 </div>
-<div class="credit-section">
+<div id="credit-section" class="credit-section">
     <div class="credit-text">
         <h1 class="credit-text__title">ЖК «Главный»</h1>
         <h2 class="credit-text__subtitle">ИПОТЕКА</h2>
@@ -514,7 +541,7 @@
         <button class="btn-yellow">Связаться с экспертом</button>
     </div>
 </div>
-<div class="contact-us-section">
+<div id="contact-us-section" class="contact-us-section">
     <div class="contact-fields">
         <form class="contact-fields__input" action="">
             <input class="contacts__props contacts__name" type="text" placeholder="Ваше имя*">
@@ -532,7 +559,7 @@
         <div class="contact-overlay-info">
             <ul class="contact-overlay-element">
                 <img class="contact-overlay-element__img" src="images/icons/phone-vibrate.svg" alt="">
-                <div class="contact-overlay-element__item">Телефон: 8 (863) 204-35-17</div>
+                <a class="contact-overlay-element__item" href="tel:+78632043517">Телефон: +7 (863) 204-35-17</a>
             </ul>
             <ul class="contact-overlay-element">
                 <img class="contact-overlay-element__img" src="images/icons/envelope.svg" alt="">
@@ -554,8 +581,9 @@
 
 </div>
 
-<script src="scripts/script-dist.js"></script>
-<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script type="text/javascript" src="scripts/script-dist.js"></script>
+<script type="text/javascript" src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script type="text/javascript" src="scripts/topButton-dist.js"></script>
 
 </body>
 </html>

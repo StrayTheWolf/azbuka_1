@@ -45,6 +45,11 @@
   text-align: center;
   margin-top: 20px;
   background-color: white;
+  :hover{
+    opacity: 0.7;
+    transition: 0.5s;
+    cursor: pointer;
+  }
 }
 
 .plan-object__img{

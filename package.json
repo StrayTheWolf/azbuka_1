@@ -17,11 +17,13 @@
   },
   "homepage": "https://github.com/StrayTheWolf/azbuka_1#readme",
   "dependencies": {
-    "normalize.css": "^8.0.1"
+    "normalize.css": "^8.0.1",
+    "swiper": "^6.4.15"
   },
   "devDependencies": {
     "browser-sync": "^2.26.14",
     "browser-sync-webpack-plugin": "^2.2.2",
+    "fslightbox": "^3.2.3",
     "laravel-mix": "^6.0.11",
     "postcss": "^8.1.14",
     "resolve-url-loader": "^3.1.2",
