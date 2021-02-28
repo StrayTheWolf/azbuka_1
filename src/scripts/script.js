@@ -1,5 +1,9 @@
 "use strict";
 require('fslightbox');
+
+
+import {creditSum} from "./credit";
+
 import {scrollFunction, topFunction} from "./topButton";
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -22,8 +26,12 @@ document.addEventListener("DOMContentLoaded", () => {
         },
     });
 
+    // Кнопка вверх
     topFunction();
     scrollFunction();
+
+    // Сумма кредита
+    creditSum()
 })
 
 document.getElementById('1-room').addEventListener('click',()=>{
@@ -41,3 +49,4 @@ document.getElementById('3-room').addEventListener('click',()=>{
     document.getElementById('apartment-2').style.display = 'none';
     document.getElementById('apartment-3').style.display = 'flex';
 })
+

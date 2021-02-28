@@ -16,7 +16,7 @@
 
 </head>
 <body class="page-body">
-<button onclick="topFunction()" id="top-btn" class="top-btn" title="Go to top">Наверх</button>
+<button onclick="topFunction()" id="top-btn" class="top-btn">Наверх</button>
 <div class="header">
     <div class="header-up-container">
         <div class="menu-logo">
@@ -173,7 +173,6 @@
             <a data-fslightbox href="images/apartment_plan/1_room-1.jpg">
                 <img class="plan-object__img" src="images/apartment_plan/1_room-1.jpg" alt="">
             </a>
-            <span>Увеличить</span>
             <div class="plan-object__title">1-комнатная</div>
             <div class="plan-object__subtitle">Площадь - 37.2</div>
             <button class="btn-red">Получить цены</button>
@@ -182,7 +181,6 @@
             <a data-fslightbox href="images/apartment_plan/1_room-2.jpg">
                 <img class="plan-object__img" src="images/apartment_plan/1_room-2.jpg" alt="">
             </a>
-            <span>Увеличить</span>
             <div class="plan-object__title">1-комнатная</div>
             <div class="plan-object__subtitle">Площадь - 35.18</div>
             <button class="btn-red">Получить цены</button>
@@ -191,7 +189,6 @@
             <a data-fslightbox href="images/apartment_plan/1_room-3.jpg">
                 <img class="plan-object__img" src="images/apartment_plan/1_room-3.jpg" alt="">
             </a>
-            <span>Увеличить</span>
             <div class="plan-object__title">1-комнатная</div>
             <div class="plan-object__subtitle">Площадь - 36.48</div>
             <button class="btn-red">Получить цены</button>
@@ -298,15 +295,15 @@
             </select>
 
             <label for="range-sum">Стоимость недвижимости</label>
-            <input class="calc-field" id="range-sum" type="text" pattern="^[0-9]+$">
-            <input type="range" min="100 000" max="30 000 000" value="0" class="credit-slider">
+            <input class="calc-field" id="range-sum" type="text" value="3 000 000">
+            <input type="range" min="1 100 000" max="30 000 000" value="0" class="credit-slider">
 
             <label for="first-payment">Первоначальный взнос</label>
-            <input class="calc-field" id="first-payment" type="text">
-            <input type="range" min="1" max="100" value="0" class="credit-slider">
+            <input class="calc-field" id="first-payment" type="text" value="300 000">
+            <input type="range" min="" max="" value="0" class="credit-slider">
 
             <label for="credit-age">Срок кредита</label>
-            <input class="calc-field" id="credit-age" type="text">
+            <input class="calc-field" id="credit-age" type="text" value="20">
             <input type="range" min="1" max="100" value="0" class="credit-slider">
 
             <div class="calc-options">
@@ -331,7 +328,7 @@
             <div class="chosen-options">
                 <div class="options-1">
                     <h1 class="options-title">Сумма кредита</h1>
-                    <h2 class="options-value">100</h2>
+                    <h2 id="credit-sum" class="options-value">100</h2>
                     <h1 class="options-title">Ежеемесячный платеж</h1>
                     <h2 class="options-value">1</h2>
                 </div>

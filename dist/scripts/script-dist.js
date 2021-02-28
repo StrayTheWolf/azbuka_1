@@ -1,6 +1,26 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/scripts/credit.js":
+/*!*******************************!*\
+  !*** ./src/scripts/credit.js ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "creditSum": () => (/* binding */ creditSum)
+/* harmony export */ });
+function creditSum() {
+  var rangeSum = document.getElementById('range-sum').value;
+  var firstPayment = document.getElementById('first-payment').value;
+  var showSum = rangeSum - firstPayment;
+  document.getElementById('credit-sum').insertAdjacentHTML('beforebegin', showSum.toString());
+}
+
+/***/ }),
+
 /***/ "./src/scripts/script.js":
 /*!*******************************!*\
   !*** ./src/scripts/script.js ***!
@@ -9,10 +29,12 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _topButton__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./topButton */ "./src/scripts/topButton.js");
+/* harmony import */ var _credit__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./credit */ "./src/scripts/credit.js");
+/* harmony import */ var _topButton__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./topButton */ "./src/scripts/topButton.js");
 
 
 __webpack_require__(/*! fslightbox */ "./node_modules/fslightbox/index.js");
+
 
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -33,9 +55,12 @@ document.addEventListener("DOMContentLoaded", function () {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev'
     }
-  });
-  (0,_topButton__WEBPACK_IMPORTED_MODULE_0__.topFunction)();
-  (0,_topButton__WEBPACK_IMPORTED_MODULE_0__.scrollFunction)();
+  }); // Кнопка вверх
+
+  (0,_topButton__WEBPACK_IMPORTED_MODULE_1__.topFunction)();
+  (0,_topButton__WEBPACK_IMPORTED_MODULE_1__.scrollFunction)(); // Сумма кредита
+
+  (0,_credit__WEBPACK_IMPORTED_MODULE_0__.creditSum)();
 });
 document.getElementById('1-room').addEventListener('click', function () {
   document.getElementById('apartment-3').style.display = 'none';
