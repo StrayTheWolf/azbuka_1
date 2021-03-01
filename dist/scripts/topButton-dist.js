@@ -24,6 +24,7 @@ function scrollFunction() {
     document.getElementById("top-btn").style.display = "none";
   }
 }
+document.getElementById('top-btn').addEventListener('click', topFunction);
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;

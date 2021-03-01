@@ -27,8 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // Кнопка вверх
-    topFunction();
-    scrollFunction();
+
 
     // Сумма кредита
     creditSum()

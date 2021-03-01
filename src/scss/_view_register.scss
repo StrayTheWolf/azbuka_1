@@ -1,9 +1,6 @@
 .view-register-section {
   display: flex;
-  justify-content: center;
   background-color: #0a172b;
-  padding: 65px 0 75px;
-  margin-top: -110px;
 }
 
 .view-register-text {
@@ -12,7 +9,7 @@
 }
 
 .view-register-dial {
-  width: 10%;
+  width: 200px;
 }
 
 .view-register-text__title {
@@ -29,6 +26,8 @@
 }
 
 .view-register-dial__phone {
+  display: block;
+  width: max-content;
   color: #ffbd34;
   text-decoration: none;
 }

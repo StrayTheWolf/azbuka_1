@@ -1,5 +1,6 @@
-
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function() {
+    scrollFunction()
+};
 
 export function scrollFunction() {
     if (document.body.scrollTop > 200  || document.documentElement.scrollTop > 200) {
@@ -8,6 +9,8 @@ export function scrollFunction() {
         document.getElementById("top-btn").style.display = "none";
     }
 }
+
+document.getElementById('top-btn').addEventListener('click',topFunction);
 
 export function topFunction() {
     document.body.scrollTop = 0;

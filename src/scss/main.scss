@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
-@import 'top-button';
-@import 'add-data';
+@import 'buttons';
 @import 'variables';
 @import '_header';
-@import '_body';
 @import 'features';
 @import 'gallery';
 @import 'map';
@@ -17,4 +15,10 @@
 .page-body {
   font-family: 'oswald', 'sans-serif';
   font-size: 20px;
+}
+.container{
+  padding: 100px;
+  &__contacts{
+    padding: 50px 0 0 300px
+  }
 }
