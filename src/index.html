@@ -16,15 +16,15 @@
 
 </head>
 <body class="page-body">
-
-<div class="wrapper">
-    <button class="pulse">Позвонить!</button>
+<div class="phone-overlay-button">
+    <button id="call-overlay-on" class="phone-overlay-button__item">
+        <img class="phone-overlay-button__img" src="images/icons/telephone.svg" alt="">
+    </button>
 </div>
-
-<div class="call-overlay-section" style="display: none">
+<div id="call-overlay" class="call-overlay-section" style="display: none">
         <div class="call-overlay-container">
             <div class="call-overlay-content">
-                <div class="cl-btn-2">
+                <div id="call-overlay-off" class="cl-btn-2">
                     <div>
                         <div class="leftright"></div>
                         <div class="rightleft"></div>
@@ -58,7 +58,9 @@
         </div>
     </div>
 </div>
-<button id="top-btn" class="top-btn">Наверх</button>
+<button id="top-btn" class="top-btn">
+    <img src="images/icons/chevron-up.svg" alt="">
+</button>
 <div class="header">
     <div class="header-up-container">
         <div class="menu-logo">

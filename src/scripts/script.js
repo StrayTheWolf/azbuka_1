@@ -47,4 +47,10 @@ document.getElementById('3-room').addEventListener('click',()=>{
     document.getElementById('apartment-2').style.display = 'none';
     document.getElementById('apartment-3').style.display = 'block';
 })
+document.getElementById('call-overlay-on').addEventListener('click',()=>{
+    document.getElementById('call-overlay').style.display = 'block';
+})
+document.getElementById('call-overlay-off').addEventListener('click',()=>{
+    document.getElementById('call-overlay').style.display = 'none';
+})
 

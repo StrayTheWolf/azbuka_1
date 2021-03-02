@@ -94,19 +94,26 @@
 }
 
 //Кнопка вызова овердея со звонком
-.pulse {
+.phone-overlay-button__item {
   width: 80px;
   height: 80px;
   border-radius: 50%;
   animation: radial-pulse 1s infinite;
   outline: none;
   opacity: 0.4;
+  background-color: rgb(255, 91, 79);
 }
-.pulse:hover{
+.phone-overlay-button__item:hover{
+  transition: all 0.5s ease-out;
   opacity: 1;
 }
 
-.wrapper {
+.phone-overlay-button__img{
+  width: 32px;
+  height: 32px;
+}
+
+.phone-overlay-button {
   width: 180%;
   display: flex;
   justify-content: center;
