@@ -16,6 +16,48 @@
 
 </head>
 <body class="page-body">
+
+<div class="wrapper">
+    <button class="pulse">Позвонить!</button>
+</div>
+
+<div class="call-overlay-section" style="display: none">
+        <div class="call-overlay-container">
+            <div class="call-overlay-content">
+                <div class="cl-btn-2">
+                    <div>
+                        <div class="leftright"></div>
+                        <div class="rightleft"></div>
+                        <span class="close-btn">закрыть</span>
+                    </div>
+                </div>
+            <div class="call-overlay__title">
+                Получите предложения по акции и информацию о действующих скидках на Whats App:
+            </div>
+            <div class="call-overlay__subtitle">
+                Мы сами перезвоним вам и проконсультируем абсолютно бесплатно по всем вопросам
+            </div>
+            <div class="call-overlay__inputs">
+                <form class="call-overlay-inputs__items" action="">
+                    <label>
+                        <input class="call-overlay-inputs__name" name="call-overlay-name" type="text" placeholder="Ваше имя">
+                    </label>
+                    <label>
+                        <input class="call-overlay-inputs__phone" name="call-overlay-phone" type="tel" placeholder="Ваш номер телефона">
+                    </label>
+                </form>
+            </div>
+            <button class="btn-red btn-red_overlay">Оставить заяку</button>
+            <div class="call-overlay-footer">
+                <input type="checkbox">
+                <div class="call-overlay-footer__text">
+                    Отправляя сведения через электронную форму, Вы даете согласие на обработку, сбор, хранение и передачу третьим лицам представленной Вами информации на условиях
+                   <a style="outline: none" href="">Политики обработки персональных данных.</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <button id="top-btn" class="top-btn">Наверх</button>
 <div class="header">
     <div class="header-up-container">
@@ -135,7 +177,7 @@
     </div>
 </div>
 <div id="view-register-section" class="view-register-section">
-    <div class="container">
+    <div class="container-flex">
         <div class="view-register-text">
             <h1 class="view-register-text__title">
                 Запишитесь на просмотр квартиры
@@ -510,8 +552,8 @@
     </div>
 </div>
 <div id="contact-us-section" class="contact-us-section">
+    <div class="container-fields">
         <div class="contact-fields">
-            <div class="container__contacts">
                 <form class="contact-fields__input" action="">
                     <input class="contacts__props contacts__name" type="text" placeholder="Ваше имя*">
                     <input class="contacts__props contacts__phone" type="tel" placeholder="Ваш телефон*">
@@ -523,7 +565,6 @@
                     </div>
                     <input type="submit" class="btn-submit"></input>
                 </form>
-            </div>
         </div>
         <div class="contact-image">
             <div class="contact-overlay-info">
@@ -548,6 +589,7 @@
                 </ul>
             </div>
         </div>
+    </div>
 </div>
 
 <script type="text/javascript" src="scripts/script-dist.js"></script>

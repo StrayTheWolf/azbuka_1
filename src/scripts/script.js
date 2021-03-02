@@ -1,7 +1,6 @@
 "use strict";
 require('fslightbox');
 
-
 import {creditSum} from "./credit";
 
 import {scrollFunction, topFunction} from "./topButton";
@@ -36,16 +35,16 @@ document.addEventListener("DOMContentLoaded", () => {
 document.getElementById('1-room').addEventListener('click',()=>{
     document.getElementById('apartment-3').style.display = 'none';
     document.getElementById('apartment-2').style.display = 'none';
-    document.getElementById('apartment-1').style.display = 'flex';
+    document.getElementById('apartment-1').style.display = 'block';
 })
 document.getElementById('2-room').addEventListener('click',()=>{
     document.getElementById('apartment-1').style.display = 'none';
     document.getElementById('apartment-3').style.display = 'none';
-    document.getElementById('apartment-2').style.display = 'flex';
+    document.getElementById('apartment-2').style.display = 'block';
 })
 document.getElementById('3-room').addEventListener('click',()=>{
     document.getElementById('apartment-1').style.display = 'none';
     document.getElementById('apartment-2').style.display = 'none';
-    document.getElementById('apartment-3').style.display = 'flex';
+    document.getElementById('apartment-3').style.display = 'block';
 })
 

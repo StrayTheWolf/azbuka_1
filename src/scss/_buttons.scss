@@ -34,6 +34,13 @@
   height: 45px;
   font-size: 1rem;
   outline: none;
+  &_overlay{
+    width: 60%;
+    font-size: 16px;
+    margin-top: 8px;
+    color: rgb(255, 255, 255);
+    background: rgb(255, 91, 79);
+  }
   &_prices{
     margin-right: 10px;
     background-color: white !important;
@@ -84,4 +91,98 @@
 .btn-submit:hover{
   background-color: #ffbd34;
   color: white;
+}
+
+//Кнопка вызова овердея со звонком
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+.pulse {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  animation: radial-pulse 1s infinite;
+  outline: none;
+  opacity: 0.4;
+}
+.pulse:hover{
+  opacity: 1;
+}
+
+.wrapper {
+  width: 180%;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  z-index: 5;
+  top: 990px;
+}
+
+@keyframes radial-pulse {
+  0% {
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.5);
+  }
+
+  100% {
+    box-shadow: 0 0 0 40px rgba(0, 0, 0, 0);
+  }
+}
+
+//Кнопка закрыть оверлей с whats'up
+
+.cl-btn-2 {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+.cl-btn-2 div {
+  cursor: pointer;
+  position: relative;
+  width: 50px;
+}
+.cl-btn-2 .leftright {
+  height: 4px;
+  width: 30px;
+  position: absolute;
+  margin-top: 24px;
+  background-color: #FF5B4F;
+  border-radius: 2px;
+  transform: rotate(45deg);
+  transition: all .3s ease-in;
+}
+.cl-btn-2 .rightleft {
+  height: 4px;
+  width: 30px;
+  position: absolute;
+  margin-top: 24px;
+  background-color: #ffbd34;
+  border-radius: 2px;
+  transform: rotate(-45deg);
+  transition: all .3s ease-in;
+}
+.cl-btn-2 .close-btn {
+  margin: 30px 0 0 10px;
+  position: absolute;
+  color: black;
+  font-family: Tahoma, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all .3s ease-in;
+  opacity: 0;
+}
+.cl-btn-2 div:hover .leftright {
+  transform: rotate(-45deg);
+  background-color: #000;
+}
+.cl-btn-2 div:hover .rightleft {
+  transform: rotate(45deg);
+  background-color: #000;
+}
+.cl-btn-2 div:hover .close-btn {
+  opacity: 1;
 }

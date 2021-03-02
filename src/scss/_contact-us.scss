@@ -1,12 +1,18 @@
+.container-fields{
+  width: 100%;
+  display: flex;
+  padding-left: 100px;
+}
+
 
 .contact-us-section {
   display: flex;
+  background-color: #f8f8f8;
 }
 
 .contact-fields {
   width: 50%;
   height: 500px;
-  background-color: #f8f8f8;
 }
 
 .contact-fields__input{
