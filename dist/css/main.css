@@ -301,11 +301,19 @@
   padding-bottom: 400px;
   text-align: center;
 }
+.header-down-container_docs {
+  padding-top: 120px;
+  text-align: center;
+  padding-bottom: 0;
+}
 
 .header {
   background-image: url("../images/background_high.jpg");
   background-size: cover;
   position: relative;
+}
+.header_docs {
+  height: 500px !important;
 }
 
 .menu-logo {
@@ -996,6 +1004,28 @@
 .btn-submit:hover {
   background-color: #ffbd34;
   color: white;
+}
+
+.documents-item {
+  background-color: #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-top: 1px solid black;
+  height: 40px;
+}
+
+.documents-item__link {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  padding-right: 100px;
+}
+
+.documents-item__text {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  padding-left: 100px;
 }
 
 .page-body {

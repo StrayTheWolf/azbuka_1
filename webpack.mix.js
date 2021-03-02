@@ -7,4 +7,5 @@ mix.js('src/scripts/script.js', 'dist/scripts/script-dist.js');
 mix.js('src/scripts/topButton.js', 'dist/scripts/topButton-dist.js');
 
 mix.copy('src/index.html', 'dist/index.html').options({processCssUrls : false});
+mix.copy('src/documents.html', 'dist/documents.html').options({processCssUrls : false});
 mix.copyDirectory('src/images', 'dist/images');

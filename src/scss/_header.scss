@@ -16,12 +16,20 @@
   padding-top: 500px;
   padding-bottom: 400px;
   text-align: center;
+  &_docs{
+    padding-top: 120px;
+    text-align: center;
+    padding-bottom: 0;
+  }
 }
 
 .header {
   background-image: url("../images/background_high.jpg");
   background-size: cover;
   position: relative;
+  &_docs{
+    height: 500px !important;
+  }
 }
 
 .menu-logo {
