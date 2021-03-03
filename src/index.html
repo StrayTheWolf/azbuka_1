@@ -311,7 +311,7 @@
         <div class="calc">
             <div class="credit-calc">
                 <label for="bank">Выберите банк</label>
-                <select class="calc-field" id="bank">
+                <select class="calc-field" style="width: 100%" id="bank">
                     <option value="">Сбербанк</option>
                     <option value="">ДомРФ</option>
                     <option value="">ТрансКапиталБанк</option>
@@ -393,10 +393,10 @@
                 <input class="options-field" id="send-credit-phone" type="tel" placeholder="">
 
                 <div class="contact-fields__agreement options-agreement">Отправляя форму, вы даете согласие на
-                    <a class="agreement__link" href="">обработку</a>
+                    <a class="agreement__link" href="docs/policy.pdf">обработку</a>
                     своих персональных данных
                 </div>
-                <input type="submit" class="btn-submit"></input>
+                <input type="submit" class="btn-submit">
 
             </div>
         </div>
@@ -559,15 +559,21 @@
     <div class="container-fields">
         <div class="contact-fields">
                 <form class="contact-fields__input" action="">
-                    <input class="contacts__props contacts__name" type="text" placeholder="Ваше имя*">
-                    <input class="contacts__props contacts__phone" type="tel" placeholder="Ваш телефон*">
-                    <input class="contacts__props contacts__props_message contacts__message" type="text"
-                           placeholder="Ваше сообщение*">
+                    <label>
+                        <input class="contacts__props contacts__name" type="text" placeholder="Ваше имя*">
+                    </label>
+                    <label>
+                        <input class="contacts__props contacts__phone" type="tel" placeholder="Ваш телефон*">
+                    </label>
+                    <label>
+                        <input class="contacts__props contacts__props_message contacts__message" type="text"
+                               placeholder="Ваше сообщение*">
+                    </label>
                     <div class="contact-fields__agreement">Отправляя форму, вы даете согласие на
-                        <a class="agreement__link" href="">обработку</a>
+                        <a class="agreement__link" href="docs/policy.pdf">обработку</a>
                         своих персональных данных
                     </div>
-                    <input type="submit" class="btn-submit"></input>
+                    <input type="submit" class="btn-submit">
                 </form>
         </div>
         <div class="contact-image">
@@ -578,7 +584,7 @@
                 </ul>
                 <ul class="contact-overlay-element">
                     <img class="contact-overlay-element__img" src="images/icons/envelope.svg" alt="">
-                    <div class="contact__item">Email: sales@azbuka-novostroek.com</div>
+                    <div class="contact__item">Email: <a href="mailto:sales@azbuka-novostroek.com">sales@azbuka-novostroek.com</a></div>
                 </ul>
                 <ul class="contact-overlay-element">
                     <img class="contact-overlay-element__img" src="images/icons/geo-alt.svg" alt="">

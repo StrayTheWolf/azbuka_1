@@ -81,7 +81,7 @@
     </div>
     <div class="header-down-container header-down-container_docs">
         <h1 class="header__title">Документы</h1>
-        <p class="header__subtitle">Главная Документы</p>
+        <p class="header__subtitle header__subtitle_docs"><a href="index.html">Главная</a> Документы</p>
     </div>
 </div>
 <div class="documents-list-section">
@@ -228,15 +228,21 @@
     <div class="container-fields">
         <div class="contact-fields">
             <form class="contact-fields__input" action="">
-                <input class="contacts__props contacts__name" type="text" placeholder="Ваше имя*">
-                <input class="contacts__props contacts__phone" type="tel" placeholder="Ваш телефон*">
-                <input class="contacts__props contacts__props_message contacts__message" type="text"
-                       placeholder="Ваше сообщение*">
+                <label>
+                    <input class="contacts__props contacts__name" type="text" placeholder="Ваше имя*">
+                </label>
+                <label>
+                    <input class="contacts__props contacts__phone" type="tel" placeholder="Ваш телефон*">
+                </label>
+                <label>
+                    <input class="contacts__props contacts__props_message contacts__message" type="text"
+                           placeholder="Ваше сообщение*">
+                </label>
                 <div class="contact-fields__agreement">Отправляя форму, вы даете согласие на
                     <a class="agreement__link" href="">обработку</a>
                     своих персональных данных
                 </div>
-                <input type="submit" class="btn-submit"></input>
+                <input type="submit" class="btn-submit">
             </form>
         </div>
         <div class="contact-image">
@@ -247,7 +253,7 @@
                 </ul>
                 <ul class="contact-overlay-element">
                     <img class="contact-overlay-element__img" src="images/icons/envelope.svg" alt="">
-                    <div class="contact__item">Email: sales@azbuka-novostroek.com</div>
+                    <div class="contact__item">Email: <a href="mailto:sales@azbuka-novostroek.com">sales@azbuka-novostroek.com</a></div>
                 </ul>
                 <ul class="contact-overlay-element">
                     <img class="contact-overlay-element__img" src="images/icons/geo-alt.svg" alt="">

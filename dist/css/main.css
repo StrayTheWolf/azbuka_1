@@ -148,6 +148,7 @@
   font-size: 16px;
   padding: 0 30px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .btn-yellow:hover {
@@ -167,6 +168,7 @@
   margin-top: 10px;
   text-transform: uppercase;
   font-size: 1.06rem;
+  cursor: pointer;
 }
 
 .btn-submit:hover {
@@ -201,7 +203,7 @@
   justify-content: center;
   position: fixed;
   z-index: 5;
-  top: 990px;
+  top: 910px;
 }
 
 @-webkit-keyframes radial-pulse {
@@ -388,6 +390,11 @@
   color: #fff;
   line-height: 1.27em;
   text-transform: uppercase;
+}
+.header__subtitle_docs {
+  font-size: 14px;
+  font-weight: normal;
+  text-transform: none;
 }
 
 .content {
@@ -711,6 +718,7 @@
 }
 
 .credit-slider {
+  background-color: #FFBC34;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -794,7 +802,7 @@
   top: 1.5px;
   width: 20px;
   height: 20px;
-  background-color: blue;
+  background-color: #ffbc34;
   border-radius: 50%;
   transition: all, 0.3s;
 }
@@ -805,7 +813,7 @@
 }
 
 .toggle-button:checked {
-  background-color: blue;
+  background-color: #ffbc34;
 }
 
 .partner-header {
@@ -947,6 +955,7 @@
   border: 0;
   border-bottom: 1px solid #d4d4d4;
   outline: none;
+  width: 50%;
 }
 .contacts__props_message {
   height: 200px;
@@ -985,25 +994,6 @@
 .contact-overlay-element__item {
   text-decoration: none;
   color: #06163a;
-}
-
-.btn-submit {
-  font-family: "Oswald", sans-serif;
-  background-color: transparent;
-  color: #0a172b;
-  outline: none;
-  border: 2px solid #ffbd34;
-  border-radius: 0;
-  line-height: 45px;
-  width: 150px;
-  margin-top: 10px;
-  text-transform: uppercase;
-  font-size: 1.06rem;
-}
-
-.btn-submit:hover {
-  background-color: #ffbd34;
-  color: white;
 }
 
 .documents-item {
