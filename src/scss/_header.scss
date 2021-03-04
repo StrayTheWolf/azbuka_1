@@ -4,11 +4,26 @@
   justify-content: center;
   background-color: rgba(171, 162, 162, 0.1);
 
-  @media (max-width: 1100px) {
+  @media (max-width: 1200px) {
     transform: scale(0.75);
     -ms-transform: scale(0.75); //ie11
-    width: 125%;
-    margin-left: -100px;
+    width: 100%;
+  }
+  @media (max-width: 860px) {
+    width: 100%;
+
+    .menu__list{
+      display: none;
+      margin-left: 0;
+    }
+    .header-logo{
+      position: absolute;
+      left: 0;
+    }
+    .menu-contact{
+      position: absolute;
+      right: 0;
+    }
   }
 }
 
@@ -23,7 +38,7 @@
   }
 }
 
-.header {
+.header-section {
   background-image: url("../images/background_high.jpg");
   background-size: cover;
   position: relative;
@@ -32,11 +47,11 @@
   }
 }
 
-.menu-logo {
+.header-logo {
   width: 150px;
   height: auto;
 }
-.menu__image{
+.header-logo__img{
   width: 140px;
   height: 70px;
 }
@@ -69,9 +84,6 @@
 // Меню шапки
 
 // Поле контактов
-.menu-contact {
-  margin-top: 5px;
-}
 
 .menu-contact__icon {
   padding-left: 20px;

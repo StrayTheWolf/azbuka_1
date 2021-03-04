@@ -1,14 +1,14 @@
-.content {
+.features-content {
   position: absolute;
   display: flex;
   display: -ms-flexbox;
-  width: 1280px;
+  width: 1200px;
   margin-top: -80px;
   background-color: white;
   border-top: 3px solid #ffbd34;
   outline: 1px solid;
 
-  @media (max-width: 1360px) {
+  @media (max-width: 1200px) {
     transform: scale(0.75);
     -ms-transform: scale(0.75); //ie11
   }
@@ -20,29 +20,28 @@
   height: 400px;
 }
 
-.columns {
+.features-column {
   position: relative;
   width: 33%;
-  margin-top: 40px;
+  margin-top: 20px;
   margin-right: 20px;
   padding-left: 30px;
-  padding-bottom: 20px;
   border: 1px solid #ececec;
 }
 
-.columns__icon {
+.features-column__icon {
   width: 60px;
   height: 60px;
 }
 
-.columns__title {
+.features-column__title {
   font-size: 1.3rem;
   font-weight: 500;
   text-transform: uppercase;
 
 }
 
-.columns__description {
+.features-column__text {
   font-family: "Rubik", sans-serif;
   line-height: 1.8em;
   color: #727780;

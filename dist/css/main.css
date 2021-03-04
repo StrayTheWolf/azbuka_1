@@ -177,8 +177,8 @@
 }
 
 .phone-overlay-button__item {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   -webkit-animation: radial-pulse 1s infinite;
           animation: radial-pulse 1s infinite;
@@ -198,12 +198,11 @@
 }
 
 .phone-overlay-button {
-  width: 180%;
-  display: flex;
   justify-content: center;
   position: fixed;
   z-index: 5;
-  top: 910px;
+  bottom: 130px;
+  right: 20px;
 }
 
 @-webkit-keyframes radial-pulse {
@@ -223,19 +222,19 @@
     box-shadow: 0 0 0 40px rgba(0, 0, 0, 0);
   }
 }
-.cl-btn-2 {
+.overlay-close-btn {
   margin: 20px;
   display: flex;
   justify-content: center;
 }
 
-.cl-btn-2 div {
+.overlay-close-btn div {
   cursor: pointer;
   position: relative;
   width: 50px;
 }
 
-.cl-btn-2 .leftright {
+.overlay-close-btn .leftright {
   height: 4px;
   width: 30px;
   position: absolute;
@@ -246,7 +245,7 @@
   transition: all 0.3s ease-in;
 }
 
-.cl-btn-2 .rightleft {
+.overlay-close-btn .rightleft {
   height: 4px;
   width: 30px;
   position: absolute;
@@ -257,7 +256,7 @@
   transition: all 0.3s ease-in;
 }
 
-.cl-btn-2 .close-btn {
+.overlay-close-btn .close-btn {
   margin: 30px 0 0 10px;
   position: absolute;
   color: black;
@@ -269,17 +268,17 @@
   opacity: 0;
 }
 
-.cl-btn-2 div:hover .leftright {
+.overlay-close-btn div:hover .leftright {
   transform: rotate(-45deg);
   background-color: #000;
 }
 
-.cl-btn-2 div:hover .rightleft {
+.overlay-close-btn div:hover .rightleft {
   transform: rotate(45deg);
   background-color: #000;
 }
 
-.cl-btn-2 div:hover .close-btn {
+.overlay-close-btn div:hover .close-btn {
   opacity: 1;
 }
 
@@ -289,12 +288,28 @@
   justify-content: center;
   background-color: rgba(171, 162, 162, 0.1);
 }
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
   .header-up-container {
     transform: scale(0.75);
     -ms-transform: scale(0.75);
-    width: 125%;
-    margin-left: -100px;
+    width: 100%;
+  }
+}
+@media (max-width: 860px) {
+  .header-up-container {
+    width: 100%;
+  }
+  .header-up-container .menu__list {
+    display: none;
+    margin-left: 0;
+  }
+  .header-up-container .header-logo {
+    position: absolute;
+    left: 0;
+  }
+  .header-up-container .menu-contact {
+    position: absolute;
+    right: 0;
   }
 }
 
@@ -309,21 +324,21 @@
   padding-bottom: 0;
 }
 
-.header {
+.header-section {
   background-image: url("../images/background_high.jpg");
   background-size: cover;
   position: relative;
 }
-.header_docs {
+.header-section_docs {
   height: 500px !important;
 }
 
-.menu-logo {
+.header-logo {
   width: 150px;
   height: auto;
 }
 
-.menu__image {
+.header-logo__img {
   width: 140px;
   height: 70px;
 }
@@ -347,10 +362,6 @@
 .menu__link:hover {
   color: #ffbd34;
   transition: 0.5s;
-}
-
-.menu-contact {
-  margin-top: 5px;
 }
 
 .menu-contact__icon {
@@ -397,18 +408,18 @@
   text-transform: none;
 }
 
-.content {
+.features-content {
   position: absolute;
   display: flex;
   display: -ms-flexbox;
-  width: 1280px;
+  width: 1200px;
   margin-top: -80px;
   background-color: white;
   border-top: 3px solid #ffbd34;
   outline: 1px solid;
 }
-@media (max-width: 1360px) {
-  .content {
+@media (max-width: 1200px) {
+  .features-content {
     transform: scale(0.75);
     -ms-transform: scale(0.75);
   }
@@ -420,28 +431,27 @@
   height: 400px;
 }
 
-.columns {
+.features-column {
   position: relative;
   width: 33%;
-  margin-top: 40px;
+  margin-top: 20px;
   margin-right: 20px;
   padding-left: 30px;
-  padding-bottom: 20px;
   border: 1px solid #ececec;
 }
 
-.columns__icon {
+.features-column__icon {
   width: 60px;
   height: 60px;
 }
 
-.columns__title {
+.features-column__title {
   font-size: 1.3rem;
   font-weight: 500;
   text-transform: uppercase;
 }
 
-.columns__description {
+.features-column__text {
   font-family: "Rubik", sans-serif;
   line-height: 1.8em;
   color: #727780;
@@ -475,7 +485,7 @@
   transition: 0.5s;
   cursor: pointer;
 }
-@media (max-width: 1380px) {
+@media (max-width: 1200px) {
   .gallery-content__image {
     width: 40%;
   }
@@ -1020,7 +1030,7 @@
 
 .page-body {
   font-family: "oswald", "sans-serif";
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .container {

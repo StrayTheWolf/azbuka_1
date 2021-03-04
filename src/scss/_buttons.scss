@@ -95,10 +95,10 @@
   color: white;
 }
 
-//Кнопка вызова овердея со звонком
+//Кнопка вызова оверлея со звонком
 .phone-overlay-button__item {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   animation: radial-pulse 1s infinite;
   outline: none;
@@ -116,12 +116,11 @@
 }
 
 .phone-overlay-button {
-  width: 180%;
-  display: flex;
   justify-content: center;
   position: fixed;
   z-index: 5;
-  top: 910px;
+  bottom: 130px;
+  right: 20px;
 }
 
 @keyframes radial-pulse {
@@ -136,17 +135,17 @@
 
 //Кнопка закрыть оверлей с whats'up
 
-.cl-btn-2 {
+.overlay-close-btn {
   margin: 20px;
   display: flex;
   justify-content: center;
 }
-.cl-btn-2 div {
+.overlay-close-btn div {
   cursor: pointer;
   position: relative;
   width: 50px;
 }
-.cl-btn-2 .leftright {
+.overlay-close-btn .leftright {
   height: 4px;
   width: 30px;
   position: absolute;
@@ -156,7 +155,7 @@
   transform: rotate(45deg);
   transition: all .3s ease-in;
 }
-.cl-btn-2 .rightleft {
+.overlay-close-btn .rightleft {
   height: 4px;
   width: 30px;
   position: absolute;
@@ -166,7 +165,7 @@
   transform: rotate(-45deg);
   transition: all .3s ease-in;
 }
-.cl-btn-2 .close-btn {
+.overlay-close-btn .close-btn {
   margin: 30px 0 0 10px;
   position: absolute;
   color: black;
@@ -177,14 +176,14 @@
   transition: all .3s ease-in;
   opacity: 0;
 }
-.cl-btn-2 div:hover .leftright {
+.overlay-close-btn div:hover .leftright {
   transform: rotate(-45deg);
   background-color: #000;
 }
-.cl-btn-2 div:hover .rightleft {
+.overlay-close-btn div:hover .rightleft {
   transform: rotate(45deg);
   background-color: #000;
 }
-.cl-btn-2 div:hover .close-btn {
+.overlay-close-btn div:hover .close-btn {
   opacity: 1;
 }
