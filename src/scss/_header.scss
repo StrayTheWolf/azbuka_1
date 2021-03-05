@@ -4,6 +4,15 @@
   justify-content: center;
   background-color: rgba(171, 162, 162, 0.1);
 
+  @media (min-width: 860px) {
+    .menu__list{
+      display: flex !important;
+    }
+    .menu__open{
+      display: none !important;
+    }
+  }
+
   @media (max-width: 1200px) {
     transform: scale(0.75);
     -ms-transform: scale(0.75); //ie11
@@ -12,17 +21,65 @@
   @media (max-width: 860px) {
     width: 100%;
 
+    .menu-contact{
+
+    }
+
+    .header-logo{
+      width: 75px;
+      height: auto;
+    }
     .menu__list{
       display: none;
-      margin-left: 0;
+      background-color: rgba(255, 189, 52, 0.3);
+      width: 60vw;
+      height: 37vh;
+      position: fixed;
+      flex-direction: column;
+      right: -55px;
+      top: -17px;
+      padding: 30px;
+      z-index: 10;
+      border-radius: 15px;
+      text-align: center;
     }
+    .menu__item{
+      padding-bottom: 15px;
+    }
+
     .header-logo{
       position: absolute;
-      left: 0;
+      left: -50px;
     }
     .menu-contact{
       position: absolute;
-      right: 0;
+      right: 20px;
+      top: 25px;
+    }
+    .menu__open{
+      width: 50px;
+      height: 50px;
+      display: block;
+      position: absolute;
+      top: 15px;
+      right: -50px;
+      background-color: #ffbd34;
+      border: none;
+      border-radius: 5px;
+      outline: none;
+    }
+    .menu__close{
+      width: 50px;
+      height: 50px;
+      display: none;
+      position: absolute;
+      top: 15px;
+      right: -50px;
+      background-color: #ffbd34;
+      border: none;
+      border-radius: 30px;
+      z-index: 10;
+      outline: none;
     }
   }
 }
@@ -79,6 +136,36 @@
 .menu__link:hover{
   color: #ffbd34;
   transition: 0.5s;
+}
+
+.menu__open{
+  display: none;
+}
+.menu__close{
+  display: none;
+}
+.menu__icon{
+  width: 35px;
+  height: 2px;
+  background-color: white;
+  margin: 8px 0;
+  display: block;
+  &_angle1{
+    width: 25px;
+    height: 2px;
+    background-color: white;
+    transform: rotate(45deg);
+    position: absolute;
+    left: 13px;
+  }
+  &_angle2{
+    width: 25px;
+    height: 2px;
+    background-color: white;
+    transform: rotate(-45deg);
+    position: absolute;
+    right: 12px;
+  }
 }
 
 // Меню шапки

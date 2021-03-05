@@ -1,6 +1,7 @@
 {
     "/dist/scripts/script-dist.js": "/dist/scripts/script-dist.js",
     "/dist/scripts/topButton-dist.js": "/dist/scripts/topButton-dist.js",
+    "/dist/scripts/burger-menu-dist.js": "/dist/scripts/burger-menu-dist.js",
     "/dist/css/main.css": "/dist/css/main.css",
     "/dist/index.html": "/dist/index.html",
     "/dist/documents.html": "/dist/documents.html",
