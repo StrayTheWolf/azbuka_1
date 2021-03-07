@@ -34,6 +34,15 @@
 
 .how-to-buy-text__description {
   line-height: 1.8em;
+  position: relative;
+  &:before{
+    content: "";
+    width: 35px;
+    height: 5px;
+    background: #ffbd34;
+    position: absolute;
+    top: -15px;
+  }
 }
 
 .steps{

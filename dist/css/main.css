@@ -533,10 +533,8 @@
 .features-column {
   position: relative;
   width: 33%;
-  margin-top: 20px;
-  margin-right: 20px;
-  padding-left: 30px;
-  border: 1px solid #ececec;
+  border-right: 2px solid #ececec;
+  padding: 20px 20px 20px 30px;
 }
 
 .features-column__icon {
@@ -599,7 +597,7 @@
   transition: 0.5s;
   cursor: pointer;
 }
-.gallery-content__image:hover .gallery-content__zoom {
+.gallery-content__image:hover .content-zoom {
   opacity: 1 !important;
   transition: 1s;
 }
@@ -609,7 +607,7 @@
   }
 }
 
-.gallery-content__zoom {
+.content-zoom {
   position: absolute;
   z-index: 2;
   right: 20px;
@@ -646,6 +644,15 @@
 
 .gallery-text__description {
   line-height: 1.8em;
+  position: relative;
+}
+.gallery-text__description:before {
+  content: "";
+  width: 35px;
+  height: 5px;
+  background: #ffbd34;
+  position: absolute;
+  top: -15px;
 }
 
 .button-prices {
@@ -691,6 +698,15 @@
 
 .map-text__description {
   line-height: 1.8em;
+  position: relative;
+}
+.map-text__description:before {
+  content: "";
+  width: 35px;
+  height: 5px;
+  background: #ffbd34;
+  position: absolute;
+  top: -15px;
 }
 
 .view-register-section {
@@ -741,6 +757,7 @@
   width: max-content;
   color: #ffbd34;
   text-decoration: none;
+  font-size: 25px;
 }
 
 .button_dial {
@@ -794,6 +811,15 @@
 
 .plan-text__description {
   line-height: 1.8em;
+  position: relative;
+}
+.plan-text__description:before {
+  content: "";
+  width: 35px;
+  height: 5px;
+  background: #ffbd34;
+  position: absolute;
+  top: -15px;
 }
 
 .change-plan {
@@ -814,7 +840,7 @@
   height: 400px;
   display: inline-block;
 }
-.plan-object :hover {
+.plan-object:hover {
   opacity: 0.7;
   transition: 0.5s;
   cursor: pointer;
@@ -872,6 +898,15 @@
 
 .credit-text__description {
   line-height: 1.8em;
+  position: relative;
+}
+.credit-text__description:before {
+  content: "";
+  width: 35px;
+  height: 5px;
+  background: #ffbd34;
+  position: absolute;
+  top: -15px;
 }
 
 .calc {
@@ -1107,6 +1142,15 @@
 
 .how-to-buy-text__description {
   line-height: 1.8em;
+  position: relative;
+}
+.how-to-buy-text__description:before {
+  content: "";
+  width: 35px;
+  height: 5px;
+  background: #ffbd34;
+  position: absolute;
+  top: -15px;
 }
 
 .steps {
@@ -1160,6 +1204,18 @@
     width: auto;
     height: auto;
     margin-left: 0;
+  }
+  .contact-us-section .contact-fields {
+    width: auto;
+  }
+  .contact-us-section .contact-fields__input {
+    padding: 20px;
+  }
+  .contact-us-section .contact-fields__agreement {
+    width: auto;
+  }
+  .contact-us-section .contacts__props {
+    width: 100%;
   }
 }
 

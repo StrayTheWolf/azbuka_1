@@ -39,7 +39,7 @@
     opacity: 0.7;
     transition: 0.5s;
     cursor: pointer;
-    .gallery-content__zoom{
+    .content-zoom{
       opacity: 1 !important;
       transition: 1.0s;
     }
@@ -48,7 +48,7 @@
     width: 40%;
   }
 }
-.gallery-content__zoom{
+.content-zoom{
   position: absolute;
   z-index: 2;
   right: 20px;
@@ -85,6 +85,15 @@
 
 .gallery-text__description {
   line-height: 1.8em;
+  position: relative;
+  &:before{
+    content: "";
+    width: 35px;
+    height: 5px;
+    background: #ffbd34;
+    position: absolute;
+    top: -15px;
+  }
 }
 
 .button-prices{
