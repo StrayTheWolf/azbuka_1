@@ -1,5 +1,18 @@
 .view-register-section {
   background-color: #0a172b;
+  @media (max-width: 860px) {
+    .container-flex{
+      padding: 0;
+      flex-direction: column;
+      transform: scale(0.75);
+    }
+    .view-register-text{
+      width: auto;
+    }
+    .view-register-dial__phone{
+      font-size: 40px;
+    }
+  }
 }
 
 .view-register-text {

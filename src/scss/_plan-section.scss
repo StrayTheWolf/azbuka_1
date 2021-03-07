@@ -1,5 +1,20 @@
 .plan-section {
   background-color: #f8f8f8;
+  @media (max-width: 860px) {
+    .container{
+      padding: 0;
+      transform: scale(0.75);
+    }
+    .plan-view{
+    }
+    .plan-text{
+      width: auto;
+    }
+    .change-plan{
+      display: block;
+      text-align: center;
+    }
+  }
 }
 
 .plan-text {

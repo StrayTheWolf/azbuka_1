@@ -1,3 +1,19 @@
+.partner-section{
+  @media (max-width: 860px) {
+    .container{
+      padding: 0;
+      transform: scale(0.75);
+    }
+    .swiper-container{
+
+    }
+    .partner-details{
+      margin: auto;
+      flex-direction: column;
+    }
+  }
+}
+
 .partner-header {
   width: 1275px;
   margin: auto;

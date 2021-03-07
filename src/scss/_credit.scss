@@ -1,3 +1,30 @@
+.credit-section{
+  @media (max-width: 860px) {
+    .container{
+      padding: 0;
+      transform: scale(0.75);
+    }
+    .calc{
+      width: auto;
+      flex-direction: column;
+    }
+    .credit-text{
+      width: auto;
+    }
+    .calc-field{
+      width: 100%;
+    }
+    .credit-calc{
+      width: auto;
+      margin-bottom: 20px;
+    }
+    .credit-sum{
+      width: auto;
+      margin: 0;
+    }
+  }
+}
+
 .credit-text {
   width: 1275px;
   margin: auto;

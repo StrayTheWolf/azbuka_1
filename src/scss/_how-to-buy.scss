@@ -1,3 +1,18 @@
+.how-to-buy-section{
+  @media (max-width: 860px) {
+    .container{
+      padding: 0;
+      transform: scale(0.75);
+    }
+    .how-to-buy-text{
+      width: auto;
+    }
+    .steps{
+      flex-direction: column;
+    }
+  }
+}
+
 .how-to-buy-text {
   width: 1275px;
   margin: auto;

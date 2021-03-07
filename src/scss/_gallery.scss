@@ -1,5 +1,20 @@
 .gallery-section {
   background-color: #f8f8f8;
+  @media (max-width: 860px) {
+    .container{
+      padding: 0;
+      transform: scale(0.75);
+    }
+    .gallery-content{
+      width: auto;
+    }
+    .gallery-text{
+      width: auto;
+    }
+    .gallery-content__image{
+      width: 100%;
+    }
+  }
 }
 
 .gallery-text {
@@ -20,14 +35,27 @@
   width: 30%;
   margin-right: 5px;
   position: relative;
-  :hover{
+  &:hover{
     opacity: 0.7;
     transition: 0.5s;
     cursor: pointer;
+    .gallery-content__zoom{
+      opacity: 1 !important;
+      transition: 1.0s;
+    }
   }
   @media (max-width: 1200px) {
     width: 40%;
   }
+}
+.gallery-content__zoom{
+  position: absolute;
+  z-index: 2;
+  right: 20px;
+  bottom: 20px;
+  font-size: 20px;
+  pointer-events: none;
+  opacity: 0;
 }
 
 .gallery__overlay{

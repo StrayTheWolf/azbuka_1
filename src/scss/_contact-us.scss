@@ -1,13 +1,28 @@
+.contact-us-section {
+  display: flex;
+  background-color: #f8f8f8;
+  @media (max-width: 860px) {
+    padding: 0;
+    .container-fields{
+      padding: 0;
+      flex-direction: column;
+    }
+    .contact-image{
+      width: 100%;
+    }
+    .contact-overlay-info{
+      width: auto;
+      height: auto;
+      margin-left: 0;
+    }
+  }
+
+}
+
 .container-fields{
   width: 100%;
   display: flex;
   padding-left: 100px;
-}
-
-
-.contact-us-section {
-  display: flex;
-  background-color: #f8f8f8;
 }
 
 .contact-fields {

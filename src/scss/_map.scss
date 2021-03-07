@@ -1,3 +1,15 @@
+.map-section{
+  @media (max-width: 860px) {
+    .container{
+      padding: 0;
+      transform: scale(0.75);
+    }
+    .map-text{
+      width: auto;
+    }
+  }
+}
+
 .map-text {
   width: 1275px;
   margin: auto;
@@ -9,10 +21,6 @@
   font-weight: normal;
   color: #ffbd34;
   text-transform: uppercase;
-}
-
-.map-location{
-
 }
 
 .map-text__subtitle {
