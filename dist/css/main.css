@@ -280,11 +280,19 @@
   opacity: 1;
 }
 
+.header-up-background {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+@media (max-width: 860px) {
+  .header-up-background {
+    background-color: #0c0e29;
+  }
+}
+
 .header-up-container {
   padding-top: 10px;
   display: flex;
   justify-content: center;
-  background-color: rgba(171, 162, 162, 0.1);
 }
 @media (min-width: 860px) {
   .header-up-container .menu__list {
@@ -311,7 +319,7 @@
   }
   .header-up-container .menu__list {
     display: none;
-    background-color: rgba(255, 189, 52, 0.3);
+    background-color: #ffbd34;
     width: 60vw;
     height: 37vh;
     position: fixed;
@@ -493,6 +501,7 @@
   font-size: 14px;
   font-weight: normal;
   text-transform: none;
+  padding-bottom: 80px;
 }
 
 .features-content {
@@ -780,12 +789,18 @@
     padding: 0;
     transform: scale(0.75);
   }
+  .plan-section .plan-view {
+    width: auto;
+  }
   .plan-section .plan-text {
     width: auto;
   }
   .plan-section .change-plan {
     display: block;
     text-align: center;
+  }
+  .plan-section .plan-object {
+    width: 100%;
   }
 }
 
@@ -865,6 +880,7 @@
   }
   .credit-section .calc-field {
     width: 100%;
+    padding: 16px 0;
   }
   .credit-section .credit-calc {
     width: auto;
@@ -1292,26 +1308,45 @@
   color: #06163a;
 }
 
+@media (max-width: 860px) {
+  .documents-list-section .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
 .documents-item {
   background-color: #ddd;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   border-top: 1px solid black;
-  height: 40px;
+  height: 30px;
+}
+
+.documents-item_white {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-top: 1px solid black;
+  height: 30px;
 }
 
 .documents-item__link {
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   text-decoration: none;
-  padding-right: 100px;
+  padding-right: 10px;
+  margin: 0;
+  color: #ffbd34;
 }
 
 .documents-item__text {
   font-family: "Oswald", sans-serif;
   font-size: 16px;
-  padding-left: 100px;
+  padding-left: 10px;
+  margin: 0;
 }
 
 .page-body {

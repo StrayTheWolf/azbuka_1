@@ -6,6 +6,7 @@
       transform: scale(0.75);
     }
     .plan-view{
+      width: auto;
     }
     .plan-text{
       width: auto;
@@ -13,6 +14,9 @@
     .change-plan{
       display: block;
       text-align: center;
+    }
+    .plan-object{
+      width: 100%;
     }
   }
 }

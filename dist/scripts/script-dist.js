@@ -67,7 +67,8 @@ document.addEventListener("DOMContentLoaded", function () {
   // Сумма кредита
 
   (0,_credit__WEBPACK_IMPORTED_MODULE_0__.creditSum)();
-});
+}); //кнопка апартаменты
+
 document.getElementById('1-room').addEventListener('click', function () {
   document.getElementById('apartment-3').style.display = 'none';
   document.getElementById('apartment-2').style.display = 'none';
@@ -82,7 +83,8 @@ document.getElementById('3-room').addEventListener('click', function () {
   document.getElementById('apartment-1').style.display = 'none';
   document.getElementById('apartment-2').style.display = 'none';
   document.getElementById('apartment-3').style.display = 'block';
-});
+}); //кнопка звонка
+
 document.getElementById('call-overlay-on').addEventListener('click', function () {
   document.getElementById('call-overlay').style.display = 'block';
 });

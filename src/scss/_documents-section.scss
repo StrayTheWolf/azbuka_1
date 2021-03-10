@@ -1,21 +1,43 @@
+.documents-list-section{
+  .container{
+    @media (max-width: 860px) {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+}
+
 .documents-item{
   background-color: #ddd;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   border-top: 1px solid black;
-  height: 40px;
+  height: 30px;
 }
+
+.documents-item_white{
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-top: 1px solid black;
+  height: 30px;
+}
+
 .documents-item__link{
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   text-decoration: none;
-  padding-right: 100px;
+  padding-right: 10px;
+  margin: 0;
+  color: #ffbd34;
 }
 
 .documents-item__text{
   font-family: "Oswald", sans-serif;
   font-size: 16px;
-  padding-left: 100px;
+  padding-left: 10px;
+  margin: 0;
 }
 

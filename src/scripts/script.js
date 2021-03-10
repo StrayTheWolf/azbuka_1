@@ -32,6 +32,8 @@ document.addEventListener("DOMContentLoaded", () => {
     creditSum()
 })
 
+//кнопка апартаменты
+
 document.getElementById('1-room').addEventListener('click',()=>{
     document.getElementById('apartment-3').style.display = 'none';
     document.getElementById('apartment-2').style.display = 'none';
@@ -47,6 +49,8 @@ document.getElementById('3-room').addEventListener('click',()=>{
     document.getElementById('apartment-2').style.display = 'none';
     document.getElementById('apartment-3').style.display = 'block';
 })
+
+//кнопка звонка
 document.getElementById('call-overlay-on').addEventListener('click',()=>{
     document.getElementById('call-overlay').style.display = 'block';
 })

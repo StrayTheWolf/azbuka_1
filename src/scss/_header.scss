@@ -1,9 +1,13 @@
+.header-up-background{
+  background-color: rgba(255, 255, 255, 0.1);
+  @media (max-width: 860px) {
+    background-color: rgba(12, 14, 41, 1);
+  }
+}
 .header-up-container {
   padding-top: 10px;
   display: flex;
   justify-content: center;
-  background-color: rgba(171, 162, 162, 0.1);
-
   @media (min-width: 860px) {
     .menu__list{
       display: flex !important;
@@ -12,7 +16,6 @@
       display: none !important;
     }
   }
-
   @media (max-width: 1200px) {
     transform: scale(0.75);
     -ms-transform: scale(0.75); //ie11
@@ -27,7 +30,7 @@
     }
     .menu__list{
       display: none;
-      background-color: rgba(255, 189, 52, 0.3);
+      background-color: rgb(255, 189, 52);
       width: 60vw;
       height: 37vh;
       position: fixed;
@@ -215,5 +218,6 @@
     font-size: 14px;
     font-weight: normal;
     text-transform: none;
+    padding-bottom: 80px;
   }
 }
