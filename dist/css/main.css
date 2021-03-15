@@ -369,6 +369,10 @@
     z-index: 10;
     outline: none;
   }
+  .header-up-container .menu__link:hover {
+    color: black;
+    transition: 0.5s;
+  }
 }
 
 .header-down-container {
@@ -1317,7 +1321,7 @@
 }
 
 .documents-item {
-  background-color: #ddd;
+  background-color: #f1f1f1;
   display: flex;
   justify-content: space-between;
   align-items: baseline;

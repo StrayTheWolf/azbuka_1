@@ -1,6 +1,38 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/scripts/burger-menu.js":
+/*!************************************!*\
+  !*** ./src/scripts/burger-menu.js ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "mobileMenu": () => (/* binding */ mobileMenu)
+/* harmony export */ });
+
+
+function mobileMenu() {
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelector('.menu__open').addEventListener('click', function () {
+      document.querySelector('.menu__open').style.display = 'none';
+      document.querySelector('.menu__close').style.display = 'block';
+      document.querySelector('.menu__list').style.display = 'flex';
+      document.querySelector('.menu-contact').style.display = 'none';
+    });
+    document.querySelector('.menu__close').addEventListener('click', function () {
+      document.querySelector('.menu__close').style.display = 'none';
+      document.querySelector('.menu__open').style.display = 'block';
+      document.querySelector('.menu__list').style.display = 'none';
+      document.querySelector('.menu-contact').style.display = 'block';
+    });
+  });
+}
+
+/***/ }),
+
 /***/ "./src/scripts/credit.js":
 /*!*******************************!*\
   !*** ./src/scripts/credit.js ***!
@@ -37,11 +69,13 @@ function creditSum() {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _credit__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./credit */ "./src/scripts/credit.js");
-/* harmony import */ var _topButton__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./topButton */ "./src/scripts/topButton.js");
+/* harmony import */ var _burger_menu__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./burger-menu */ "./src/scripts/burger-menu.js");
+/* harmony import */ var _credit__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./credit */ "./src/scripts/credit.js");
+/* harmony import */ var _topButton__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./topButton */ "./src/scripts/topButton.js");
 
 
 __webpack_require__(/*! fslightbox */ "./node_modules/fslightbox/index.js");
+
 
 
 
@@ -66,7 +100,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }); // Кнопка вверх
   // Сумма кредита
 
-  (0,_credit__WEBPACK_IMPORTED_MODULE_0__.creditSum)();
+  (0,_credit__WEBPACK_IMPORTED_MODULE_1__.creditSum)();
 }); //кнопка апартаменты
 
 document.getElementById('1-room').addEventListener('click', function () {
@@ -90,7 +124,12 @@ document.getElementById('call-overlay-on').addEventListener('click', function ()
 });
 document.getElementById('call-overlay-off').addEventListener('click', function () {
   document.getElementById('call-overlay').style.display = 'none';
-});
+}); //кнопка вверх
+
+(0,_topButton__WEBPACK_IMPORTED_MODULE_2__.topFunction)();
+(0,_topButton__WEBPACK_IMPORTED_MODULE_2__.scrollFunction)(); //боковое меню мобильной версии
+
+(0,_burger_menu__WEBPACK_IMPORTED_MODULE_0__.mobileMenu)();
 
 /***/ }),
 

@@ -1,5 +1,8 @@
 "use strict";
+
 require('fslightbox');
+
+import {mobileMenu} from "./burger-menu";
 
 import {creditSum} from "./credit";
 
@@ -58,3 +61,11 @@ document.getElementById('call-overlay-off').addEventListener('click',()=>{
     document.getElementById('call-overlay').style.display = 'none';
 })
 
+//кнопка вверх
+
+topFunction();
+scrollFunction();
+
+//боковое меню мобильной версии
+
+mobileMenu();
