@@ -14,7 +14,7 @@
 .call-overlay-container {
   width: 320px;
   height: 500px;
-  background-color: white;
+  background-color: #fff;
   border-radius: 50px;
   margin: auto;
 }
@@ -23,7 +23,7 @@
   text-align: center;
   line-height: 32px;
   font-weight: bold;
-  color: #1e191c;
+  color: #000;
   font-size: 26px;
   padding: 30px 30px 0 30px;
 }
@@ -31,7 +31,7 @@
 .call-overlay__subtitle {
   text-align: center;
   line-height: 20px;
-  color: #7f7f7f;
+  color: #7F7F7F;
   font-size: 15px;
   margin: 10px auto;
   width: 300px;
@@ -40,7 +40,7 @@
 .call-overlay-footer__text {
   font-size: 10px;
   line-height: 12px;
-  color: #bbb;
+  color: #bbbbbb;
   padding: 2px 0 0 6px;
   cursor: pointer;
   text-align: left;
@@ -54,11 +54,11 @@
 .call-overlay-inputs__name {
   height: 42px;
   border-radius: 20px;
-  border: 2px solid #e0571a !important;
+  border: 2px solid #FF5B4F !important;
   box-shadow: rgba(169, 169, 169, 0.25) 0 2px 4px inset;
   box-sizing: border-box;
-  color: rgba(30, 25, 28, 0.5);
-  background: white;
+  color: rgba(0, 0, 0, 0.8);
+  background: #fff;
   width: 60%;
   padding-left: 10px;
   margin-bottom: 10px;
@@ -68,11 +68,11 @@
 .call-overlay-inputs__phone {
   height: 42px;
   border-radius: 20px;
-  border: 2px solid #e0571a !important;
+  border: 2px solid #FF5B4F !important;
   box-shadow: rgba(169, 169, 169, 0.25) 0 2px 4px inset;
   box-sizing: border-box;
-  color: rgba(30, 25, 28, 0.5);
-  background: white;
+  color: rgba(0, 0, 0, 0.8);
+  background: #fff;
   width: 60%;
   padding-left: 10px;
   outline: none;
@@ -93,7 +93,7 @@
   border: none;
   outline: none;
   background-color: #ffbd34;
-  color: white;
+  color: #fff;
   cursor: pointer;
   padding: 15px;
   border-radius: 4px;
@@ -105,8 +105,8 @@
 }
 
 .btn-red {
-  font-family: "Oswald", sans-serif;
-  color: white;
+  font-family: "oswald", "sans-serif";
+  color: #fff;
   background-color: #FF5B4F !important;
   border-radius: 50px;
   text-transform: uppercase;
@@ -120,8 +120,8 @@
   width: 60%;
   font-size: 16px;
   margin-top: 8px;
-  color: white;
-  background: #ff5b4f;
+  color: #fff;
+  background: #FF5B4F;
 }
 .btn-red_prices {
   margin-right: 10px;
@@ -150,7 +150,7 @@
 
 .btn-yellow:hover {
   background-color: #ffbd34;
-  color: white;
+  color: #fff;
 }
 
 .btn-submit {
@@ -170,7 +170,7 @@
 
 .btn-submit:hover {
   background-color: #ffbd34;
-  color: white;
+  color: #fff;
 }
 
 .phone-overlay-button__item {
@@ -181,7 +181,7 @@
           animation: radial-pulse 1s infinite;
   outline: none;
   opacity: 0.4;
-  background-color: #ff5b4f;
+  background-color: #FF5B4F;
   border: none;
 }
 
@@ -257,7 +257,7 @@
 .overlay-close-btn .close-btn {
   margin: 30px 0 0 10px;
   position: absolute;
-  color: black;
+  color: #000;
   font-family: Tahoma, sans-serif;
   font-size: 13px;
   font-weight: bold;
@@ -286,7 +286,7 @@
 }
 @media (max-width: 860px) {
   .header-up-background {
-    background-color: #0c0e29;
+    background-color: #0a172b;
   }
 }
 
@@ -370,7 +370,7 @@
     outline: none;
   }
   .header-up-container .menu__link:hover {
-    color: black;
+    color: #000;
     transition: 0.5s;
   }
 }
@@ -443,14 +443,14 @@
 .menu__icon {
   width: 35px;
   height: 2px;
-  background-color: white;
+  background-color: #fff;
   margin: 8px 0;
   display: block;
 }
 .menu__icon_angle1 {
   width: 25px;
   height: 2px;
-  background-color: white;
+  background-color: #fff;
   transform: rotate(45deg);
   position: absolute;
   left: 12px;
@@ -458,7 +458,7 @@
 .menu__icon_angle2 {
   width: 25px;
   height: 2px;
-  background-color: white;
+  background-color: #fff;
   transform: rotate(-45deg);
   position: absolute;
   right: 13px;
@@ -473,14 +473,14 @@
 .menu-contact__title {
   padding-left: 80px;
   margin: 0;
-  color: #E71E61;
+  color: #e71e61;
   font-size: 12px;
   line-height: 1.42;
   text-transform: uppercase;
 }
 
 .menu-contact__call {
-  color: white;
+  color: #fff;
   margin-left: 35px;
   text-decoration: none;
 }
@@ -515,7 +515,7 @@
   display: -ms-flexbox;
   width: 1200px;
   margin-top: -80px;
-  background-color: white;
+  background-color: #fff;
   border-top: 3px solid #ffbd34;
   outline: 1px solid;
 }
@@ -547,7 +547,7 @@
 .features-column {
   position: relative;
   width: 33%;
-  border-right: 2px solid #ececec;
+  border-right: 2px solid #fff;
   padding: 20px 20px 20px 30px;
 }
 
@@ -565,11 +565,11 @@
 .features-column__text {
   font-family: "Rubik", sans-serif;
   line-height: 1.8em;
-  color: #727780;
+  color: #bbc1e1;
 }
 
 .gallery-section {
-  background-color: #f8f8f8;
+  background-color: #fff;
 }
 @media (max-width: 860px) {
   .gallery-section .container {
@@ -671,7 +671,7 @@
 
 .button-prices {
   margin-right: 10px;
-  background-color: white !important;
+  background-color: #fff !important;
   color: #0a172b;
   text-align: center;
 }
@@ -741,7 +741,7 @@
 }
 
 .view-register-text {
-  color: white;
+  color: #fff;
   width: 1065px;
   margin: auto;
   text-align: left;
@@ -856,7 +856,7 @@
   width: 30%;
   text-align: center;
   margin-top: 20px;
-  background-color: white;
+  background-color: #fff;
   height: 400px;
   display: inline-block;
 }
@@ -948,7 +948,7 @@
 }
 
 .credit-calc {
-  border: 1px solid #FFBC34;
+  border: 1px solid #ffbd34;
   border-radius: 5px;
   padding: 24px;
   background: #fff;
@@ -973,7 +973,7 @@
 }
 
 .credit-slider {
-  background-color: #FFBC34;
+  background-color: #ffbd34;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -981,7 +981,7 @@
 }
 
 .credit-sum {
-  border: 1px solid #FFBC34;
+  border: 1px solid #ffbd34;
   border-radius: 5px;
   padding: 24px;
   background: #fff;
@@ -1002,7 +1002,7 @@
 }
 
 .options-value {
-  color: #ffbc34;
+  color: #ffbd34;
   font-weight: 400;
   font-size: 22px;
   margin: 0;
@@ -1010,7 +1010,7 @@
 
 .options-title {
   font-size: 13px;
-  color: #93989d;
+  color: #7F7F7F;
 }
 
 .options-offer {
@@ -1039,7 +1039,7 @@
   height: 25px;
   margin: 0;
   vertical-align: top;
-  background: #ffffff;
+  background: #fff;
   border: 1px solid #bbc1e1;
   border-radius: 30px;
   outline: none;
@@ -1057,7 +1057,7 @@
   top: 1.5px;
   width: 20px;
   height: 20px;
-  background-color: #ffbc34;
+  background-color: #ffbd34;
   border-radius: 50%;
   transition: all, 0.3s;
 }
@@ -1068,7 +1068,7 @@
 }
 
 .toggle-button:checked {
-  background-color: #ffbc34;
+  background-color: #ffbd34;
 }
 
 @media (max-width: 860px) {
@@ -1195,7 +1195,7 @@
 
 .steps-column__description {
   font-size: 1rem;
-  color: #727780;
+  color: #bbbbbb;
   line-height: 1.8em;
 }
 
@@ -1208,7 +1208,7 @@
 
 .contact-us-section {
   display: flex;
-  background-color: #f8f8f8;
+  background-color: #fff;
 }
 @media (max-width: 860px) {
   .contact-us-section {
@@ -1270,7 +1270,7 @@
   height: 50px;
   padding: 0 0 8px;
   border: 0;
-  border-bottom: 1px solid #d4d4d4;
+  border-bottom: 1px solid #7F7F7F;
   outline: none;
   width: 50%;
 }
@@ -1280,7 +1280,7 @@
 
 .contact-fields__agreement {
   font-size: 12px;
-  color: #727780;
+  color: #7F7F7F;
   line-height: 1.8em;
   width: 400px;
 }
@@ -1321,19 +1321,19 @@
 }
 
 .documents-item {
-  background-color: #f1f1f1;
+  background-color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  border-top: 1px solid black;
+  border-top: 1px solid #000;
 }
 
 .documents-item_white {
-  background-color: white;
+  background-color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  border-top: 1px solid black;
+  border-top: 1px solid #000;
 }
 
 .documents-item__link {

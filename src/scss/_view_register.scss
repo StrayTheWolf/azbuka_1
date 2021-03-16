@@ -16,7 +16,7 @@
 }
 
 .view-register-text {
-  color: white;
+  color: $color-main-white;
   width: 1065px;
   margin: auto;
   text-align: left;
@@ -29,7 +29,7 @@
 .view-register-text__title {
   font-size: 2.4rem;
   font-weight: 400;
-  color: #fff;
+  color: $color-main-white;
   line-height: 1.5em;
   margin: 0 0 0.7em;
 }
@@ -42,16 +42,16 @@
 .view-register-dial__phone {
   display: block;
   width: max-content;
-  color: #ffbd34;
+  color: $color-main-yellow;
   text-decoration: none;
   font-size: 25px;
 }
 
 .button_dial {
-  background-color: #FF5B4F;
+  background-color: $color-main-red;
   height: 47px;
   font-size: 1.06rem;
-  color: #fff;
+  color: $color-main-white;
   padding: 0 30px;
   border-radius: 50px;
   text-transform: uppercase;

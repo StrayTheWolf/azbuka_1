@@ -9,24 +9,24 @@
   font-size: 18px;
   border: none;
   outline: none;
-  background-color: #ffbd34;
-  color: white;
+  background-color: $color-main-yellow;
+  color: $color-main-white;
   cursor: pointer;
   padding: 15px;
   border-radius: 4px;
 }
 
 .top-btn:hover {
-  background-color: #FF5B4F;
+  background-color: $color-main-red;
   transition: 0.5s;
 }
 
 //Красная кнопка
 
 .btn-red {
-  font-family: "Oswald", sans-serif;
-  color: white;
-  background-color: #FF5B4F !important;
+  font-family: $main-font;
+  color: $color-main-white;
+  background-color: $color-main-red !important;
   border-radius: 50px;
   text-transform: uppercase;
   box-sizing: border-box;
@@ -38,8 +38,8 @@
     width: 60%;
     font-size: 16px;
     margin-top: 8px;
-    color: rgb(255, 255, 255);
-    background: rgb(255, 91, 79);
+    color: $color-main-white;
+    background: $color-main-red;
   }
   &_prices{
     margin-right: 10px;
@@ -48,7 +48,7 @@
     text-align: center;
   }
   &_prices:hover{
-    background-color: #FF5B4F !important;
+    background-color: $color-main-red !important;
   }
 }
 
@@ -56,11 +56,11 @@
 
 .btn-yellow{
   font-family: "Oswald", sans-serif;
-  color: #0a172b;
+  color: $color-dark-blue;
   border-radius: 50px;
   background-color: transparent;
   outline: none;
-  border: 2px solid #ffbd34;
+  border: 2px solid $color-main-yellow;
   height: 47px;
   line-height: 47px;
   font-size: 16px;
@@ -70,8 +70,8 @@
 }
 
 .btn-yellow:hover{
-  background-color: #ffbd34;
-  color: white;
+  background-color: $color-main-yellow;
+  color: $color-main-white;
 }
 
 //Кнопка отправить
@@ -79,9 +79,9 @@
 .btn-submit{
   font-family: "Oswald", sans-serif;
   background-color: transparent;
-  color: #0a172b;
+  color: $color-dark-blue;
   outline: none;
-  border: 2px solid #ffbd34;
+  border: 2px solid $color-main-yellow;
   border-radius: 0;
   line-height: 45px;
   width: 150px;
@@ -91,8 +91,8 @@
   cursor: pointer;
 }
 .btn-submit:hover{
-  background-color: #ffbd34;
-  color: white;
+  background-color: $color-main-yellow;
+  color: $color-main-white;
 }
 
 //Кнопка вызова оверлея со звонком
@@ -103,7 +103,7 @@
   animation: radial-pulse 1s infinite;
   outline: none;
   opacity: 0.4;
-  background-color: rgb(255, 91, 79);
+  background-color: $color-main-red;
   border: none;
 }
 .phone-overlay-button__item:hover{
@@ -151,7 +151,7 @@
   width: 30px;
   position: absolute;
   margin-top: 24px;
-  background-color: #FF5B4F;
+  background-color: $color-main-red;
   border-radius: 2px;
   transform: rotate(45deg);
   transition: all .3s ease-in;
@@ -161,7 +161,7 @@
   width: 30px;
   position: absolute;
   margin-top: 24px;
-  background-color: #ffbd34;
+  background-color: $color-main-yellow;
   border-radius: 2px;
   transform: rotate(-45deg);
   transition: all .3s ease-in;
@@ -169,7 +169,7 @@
 .overlay-close-btn .close-btn {
   margin: 30px 0 0 10px;
   position: absolute;
-  color: black;
+  color: $color-black;
   font-family: Tahoma, sans-serif;
   font-size: 13px;
   font-weight: bold;
@@ -179,11 +179,11 @@
 }
 .overlay-close-btn div:hover .leftright {
   transform: rotate(-45deg);
-  background-color: #000;
+  background-color: $color-black;
 }
 .overlay-close-btn div:hover .rightleft {
   transform: rotate(45deg);
-  background-color: #000;
+  background-color: $color-black;
 }
 .overlay-close-btn div:hover .close-btn {
   opacity: 1;

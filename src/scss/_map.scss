@@ -19,7 +19,7 @@
 .map-text__title {
   font-size: 1.3rem;
   font-weight: normal;
-  color: #ffbd34;
+  color: $color-main-yellow;
   text-transform: uppercase;
 }
 
@@ -37,7 +37,7 @@
     content: "";
     width: 35px;
     height: 5px;
-    background: #ffbd34;
+    background: $color-main-yellow;
     position: absolute;
     top: -15px;
   }

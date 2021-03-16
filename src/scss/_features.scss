@@ -4,8 +4,8 @@
   display: -ms-flexbox;
   width: 1200px;
   margin-top: -80px;
-  background-color: white;
-  border-top: 3px solid #ffbd34;
+  background-color: $color-main-white;
+  border-top: 3px solid $color-main-yellow;
   outline: 1px solid;
 
   @media (max-width: 1200px) {
@@ -33,7 +33,7 @@
 .features-column {
   position: relative;
   width: 33%;
-  border-right: 2px solid #ececec;
+  border-right: 2px solid $color-main-white;
   padding: 20px 20px 20px 30px;
 }
 
@@ -52,5 +52,5 @@
 .features-column__text {
   font-family: "Rubik", sans-serif;
   line-height: 1.8em;
-  color: #727780;
+  color: $color-lite-blue;
 }

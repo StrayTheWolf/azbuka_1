@@ -1,5 +1,5 @@
 .gallery-section {
-  background-color: #f8f8f8;
+  background-color: $color-main-white;
   @media (max-width: 860px) {
     .container{
       padding: 0;
@@ -72,7 +72,7 @@
 .gallery-text__title {
   font-size: 1.3rem;
   font-weight: normal;
-  color: #ffbd34;
+  color: $color-main-yellow;
   text-transform: uppercase;
 }
 
@@ -90,7 +90,7 @@
     content: "";
     width: 35px;
     height: 5px;
-    background: #ffbd34;
+    background: $color-main-yellow;
     position: absolute;
     top: -15px;
   }
@@ -98,10 +98,10 @@
 
 .button-prices{
   margin-right: 10px;
-  background-color: white !important;
-  color: #0a172b;
+  background-color: $color-main-white !important;
+  color: $color-dark-blue;
   text-align: center;
 }
 .button-prices:hover{
-  background-color: #FF5B4F !important;
+  background-color: $color-main-red !important;
 }

@@ -30,7 +30,7 @@
 .plan-text__title {
   font-size: 1.3rem;
   font-weight: normal;
-  color: #ffbd34;
+  color: $color-main-yellow;
   text-transform: uppercase;
 }
 
@@ -48,7 +48,7 @@
     content: "";
     width: 35px;
     height: 5px;
-    background: #ffbd34;
+    background: $color-main-yellow;
     position: absolute;
     top: -15px;
   }
@@ -68,7 +68,7 @@
   width: 30%;
   text-align: center;
   margin-top: 20px;
-  background-color: white;
+  background-color: $color-main-white;
   height: 400px;
   display: inline-block;
   &:hover{

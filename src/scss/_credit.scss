@@ -35,7 +35,7 @@
 .credit-text__title {
   font-size: 1.3rem;
   font-weight: normal;
-  color: #ffbd34;
+  color: $color-main-yellow;
   text-transform: uppercase;
 }
 
@@ -53,7 +53,7 @@
     content: "";
     width: 35px;
     height: 5px;
-    background: #ffbd34;
+    background: $color-main-yellow;
     position: absolute;
     top: -15px;
   }
@@ -77,10 +77,10 @@
 }
 
 .credit-calc{
-  border: 1px solid #FFBC34;
+  border: 1px solid $color-main-yellow;
   border-radius: 5px;
   padding: 24px;
-  background: #fff;
+  background: $color-main-white;
   width: 60%;
 }
 .calc-field{
@@ -89,7 +89,7 @@
   padding: 16px 20px;
   border: none;
   border-radius: 4px;
-  background-color: #f1f1f1;
+  background-color: $color-field;
   margin-bottom: 15px;
   outline: none;
   font-size: 22px;
@@ -101,7 +101,7 @@
 }
 
 .credit-slider {
-  background-color: #FFBC34;
+  background-color: $color-main-yellow;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -109,10 +109,10 @@
 }
 
 .credit-sum{
-  border: 1px solid #FFBC34;
+  border: 1px solid $color-main-yellow;
   border-radius: 5px;
   padding: 24px;
-  background: #fff;
+  background: $color-main-white;
   width: 25%;
   margin-left: 20px;
 }
@@ -130,7 +130,7 @@
 }
 
 .options-value{
-  color: #ffbc34;
+  color: $color-main-yellow;
   font-weight: 400;
   font-size: 22px;
   margin: 0;
@@ -138,13 +138,13 @@
 
 .options-title{
   font-size: 13px;
-  color: #93989d;
+  color: $color-gray;
 }
 
 .options-offer{
   font-size: 20px;
   font-weight: bold;
-  color: #000;
+  color: $color-black;
   text-align: center;
 }
 
@@ -153,7 +153,7 @@
   padding: 16px 20px;
   border: none;
   border-radius: 4px;
-  background-color: #f1f1f1;
+  background-color: $color-field;
   margin-bottom: 15px;
 }
 .options-agreement{
@@ -167,8 +167,8 @@
   height: 25px;
   margin: 0;
   vertical-align: top;
-  background: #ffffff;
-  border: 1px solid #bbc1e1;
+  background:  $color-main-white;
+  border: 1px solid $color-lite-blue;
   border-radius: 30px;
   outline: none;
   cursor: pointer;
@@ -186,16 +186,16 @@
   top: 1.5px;
   width: 20px;
   height: 20px;
-  background-color: #ffbc34;
+  background-color: $color-main-yellow;
   border-radius: 50%;
   transition: all, 0.3s;
 }
 
 .toggle-button:checked::after {
   transform: translateX(calc(100% + 3px));
-  background-color: #fff;
+  background-color: $color-main-white;
 }
 
 .toggle-button:checked {
-  background-color: #ffbc34;
+  background-color: $color-main-yellow;
 }

@@ -8,19 +8,19 @@
 }
 
 .documents-item{
-  background-color: #f1f1f1;
+  background-color: $color-main-white;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  border-top: 1px solid black;
+  border-top: 1px solid $color-black;
 }
 
 .documents-item_white{
-  background-color: white;
+  background-color: $color-main-white;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  border-top: 1px solid black;
+  border-top: 1px solid $color-black;
 }
 
 .documents-item__link{
@@ -29,7 +29,7 @@
   text-decoration: none;
   padding-right: 10px;
   margin: 0;
-  color: #ffbd34;
+  color: $color-main-yellow;
 }
 
 .documents-item__text{
