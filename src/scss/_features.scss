@@ -15,6 +15,7 @@
     width: auto;
     .features-column{
       width: auto;
+      border-bottom: 2px solid $color-white-gray2;
     }
   }
 }
@@ -33,7 +34,7 @@
 .features-column {
   position: relative;
   width: 33%;
-  border-right: 2px solid $color-main-white;
+  border-right: 2px solid $color-white-gray2;
   padding: 20px 20px 20px 30px;
 }
 

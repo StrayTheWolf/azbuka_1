@@ -383,6 +383,9 @@
   .header-up-container .menu-contact__call {
     margin: 0;
   }
+  .header-up-container .header__subtitle {
+    font-size: 16px;
+  }
 }
 
 .header-down-container {
@@ -539,6 +542,7 @@
   }
   .features-content .features-column {
     width: auto;
+    border-bottom: 2px solid #f0f0f0;
   }
 }
 
@@ -558,7 +562,7 @@
 .features-column {
   position: relative;
   width: 33%;
-  border-right: 2px solid #fff;
+  border-right: 2px solid #f0f0f0;
   padding: 20px 20px 20px 30px;
 }
 
@@ -1318,6 +1322,7 @@
   margin: auto;
   padding-bottom: 10px;
   align-items: baseline;
+  padding-left: 10px;
 }
 .contact-overlay-element__item {
   text-decoration: none;

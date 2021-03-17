@@ -44,8 +44,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "creditSum": () => (/* binding */ creditSum)
 /* harmony export */ });
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
 function creditSum() {
   var inputRange = document.getElementById('range-sum').value;
   var inputPayment = document.getElementById('first-payment').value;
@@ -53,10 +51,6 @@ function creditSum() {
   var payment = Number(inputPayment);
   var sum = range - payment;
   document.getElementById('credit-sum').insertAdjacentHTML('beforebegin', sum.toString());
-  console.log(range);
-  console.log(payment);
-  console.log(sum);
-  console.log(_typeof(range));
 }
 
 /***/ }),
@@ -78,6 +72,7 @@ __webpack_require__(/*! fslightbox */ "./node_modules/fslightbox/index.js");
 
 
 
+ //свайпер в кредитной части
 
 document.addEventListener("DOMContentLoaded", function () {
   var swiper = new Swiper('.swiper-container', {
@@ -97,8 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev'
     }
-  }); // Кнопка вверх
-  // Сумма кредита
+  }); // Сумма кредита
 
   (0,_credit__WEBPACK_IMPORTED_MODULE_1__.creditSum)();
 }); //кнопка апартаменты
@@ -117,7 +111,7 @@ document.getElementById('3-room').addEventListener('click', function () {
   document.getElementById('apartment-1').style.display = 'none';
   document.getElementById('apartment-2').style.display = 'none';
   document.getElementById('apartment-3').style.display = 'block';
-}); //кнопка звонка
+}); //кнопка показа оверлея звонка
 
 document.getElementById('call-overlay-on').addEventListener('click', function () {
   document.getElementById('call-overlay').style.display = 'block';
