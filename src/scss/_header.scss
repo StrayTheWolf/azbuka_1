@@ -1,6 +1,8 @@
 .header-up-background{
-  height: 80px;
+  height: 90px;
   background-color: $color-overlay-gray;
+  border-bottom: 1px solid $color-white-gray;
+
   @media (max-width: 860px) {
     background-color: $color-dark-blue;
   }
@@ -9,6 +11,9 @@
   padding-top: 10px;
   display: flex;
   justify-content: center;
+  height: 70px;
+  align-items: center;
+
   @media (min-width: 860px) {
     .menu__list{
       display: flex !important;
@@ -207,6 +212,10 @@
   font-size: 12px;
   line-height: 1.42;
   text-transform: uppercase;
+}
+
+.menu-contact{
+  padding-bottom: 15px;
 }
 
 .menu-contact__call {

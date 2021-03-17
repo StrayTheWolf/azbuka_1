@@ -281,8 +281,9 @@
 }
 
 .header-up-background {
-  height: 80px;
+  height: 90px;
   background-color: rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid #bbbbbb;
 }
 @media (max-width: 860px) {
   .header-up-background {
@@ -294,6 +295,8 @@
   padding-top: 10px;
   display: flex;
   justify-content: center;
+  height: 70px;
+  align-items: center;
 }
 @media (min-width: 860px) {
   .header-up-container .menu__list {
@@ -491,6 +494,10 @@
   font-size: 12px;
   line-height: 1.42;
   text-transform: uppercase;
+}
+
+.menu-contact {
+  padding-bottom: 15px;
 }
 
 .menu-contact__call {
@@ -1090,6 +1097,9 @@
   .partner-section .container {
     padding: 0;
     transform: scale(0.75);
+  }
+  .partner-section .swiper-container {
+    width: auto;
   }
   .partner-section .partner-details {
     margin: auto;
